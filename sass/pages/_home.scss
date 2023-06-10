@@ -126,12 +126,14 @@
 }
 
 .projects {
+
+  
   &__row {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     grid-gap: 5rem;
     margin-bottom: 11rem;
-
+    
     @include respond(tab-port) {
       grid-template-columns: 1fr;
       grid-gap: 2rem;
@@ -142,6 +144,11 @@
       text-align: center;
     }
 
+    &-btn-container {
+      display: flex;
+      gap: 1.5rem;
+    }
+    
     &:last-child {
       margin-bottom: 0;
     }
@@ -183,6 +190,7 @@
           font-size: 1.7rem;
         }
       }
+      
     }
   }
 }

@@ -367,6 +367,10 @@ textarea {
     text-align: center;
   }
 }
+.projects__row-btn-container {
+  display: flex;
+  gap: 1.5rem;
+}
 .projects__row:last-child {
   margin-bottom: 0;
 }
