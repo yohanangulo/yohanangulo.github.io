@@ -384,14 +384,12 @@ textarea {
   -o-object-fit: cover;
      object-fit: cover;
   position: relative;
-  z-index: 100;
 }
 .projects__row-img-software {
   position: absolute;
   top: 10%;
   left: 14.5%;
   width: 71.5%;
-  z-index: 50;
 }
 .projects__row-content {
   padding: 2rem 0;
@@ -585,6 +583,7 @@ textarea {
 .project-details__showcase-img-cont {
   width: 100%;
   margin-bottom: 6rem;
+  position: relative;
 }
 .project-details__showcase-img {
   width: 100%;
