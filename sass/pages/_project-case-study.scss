@@ -77,6 +77,11 @@
       line-height: 1.7;
       color: grey;
       margin-bottom: 2rem;
+
+      &--list {
+        margin-left: 3rem;
+      }
+
     }
   }
   &__tools-used {

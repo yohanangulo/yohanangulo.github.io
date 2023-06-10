@@ -602,6 +602,9 @@ textarea {
   color: grey;
   margin-bottom: 2rem;
 }
+.project-details__desc-para--list {
+  margin-left: 3rem;
+}
 .project-details__tools-used {
   margin: 0 0 7rem 0;
 }
