@@ -376,12 +376,22 @@ textarea {
 }
 .projects__row-img-cont {
   overflow: hidden;
+  position: relative;
 }
 .projects__row-img {
   width: 100%;
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
+  position: relative;
+  z-index: 100;
+}
+.projects__row-img-software {
+  position: absolute;
+  top: 10%;
+  left: 14.5%;
+  width: 71.5%;
+  z-index: 50;
 }
 .projects__row-content {
   padding: 2rem 0;
