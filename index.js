@@ -36,3 +36,23 @@ const headerLogoConatiner = document.querySelector('.header__logo-container')
 headerLogoConatiner.addEventListener('click', () => {
   location.href = 'index.html'
 })
+
+// scroll reveal
+// const sr = ScrollReveal();
+
+let slideUp = {
+  distance: '15%',
+  origin: 'bottom',
+  opacity: null,
+}
+
+let slideRight = {
+  distance: '20%',
+  origin: 'right',
+  opacity: 0,
+  delay: 20
+}
+
+
+sr.reveal('.heading-primary', slideUp)
+sr.reveal('.skills__skill', {...slideRight, interval: 1})

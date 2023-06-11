@@ -9,6 +9,9 @@
     "compress:css": "node-sass css/style.css css/style.css --output-style compressed",
     "build": "npm-run-all prefix:css compress:css"
   },
+  "dependencies": {
+    "scrollreveal": "^4.0.9"
+  },
   "author": "",
   "license": "GPL-3.0",
   "devDependencies": {
