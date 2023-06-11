@@ -44,19 +44,22 @@ contactForm.addEventListener("submit", (e) => {
 
   const data = new FormData(contactForm);
 
-  fetch("http://inventorysoftware.infinityfreeapp.com/mailer/contact-form.php", {
+  console.log(data)
+
+  fetch("https://formspree.io/f/mqkovrja", {
     method: "POST",
     body: data,
+    headers: {
+      Accept: "application/json",
+    },
   })
     .then(() => console.log("email sent"))
     .catch((err) => console.error(err));
 
   // clean iputs
-  contactForm["name"].value = "";
-  contactForm["email"].value = "";
-  contactForm["message"].value = "";
+  contactForm.reset();
 
-  alert('Thank you for contacting me! :)')
+  alert("Thank you reaching out to me! :)");
 });
 
 // scroll reveal

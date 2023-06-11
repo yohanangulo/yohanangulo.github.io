@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Yohan's portfolio</title>
     <meta name="description" content="Get to know Yohan Angulo" />
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
     <!-- styles -->
     <link rel="stylesheet" href="css/style.css" />
@@ -408,22 +407,11 @@
         <div class="contact__form-container">
           <form id="contact-form" class="contact__form" autocomplete="off">
             <div class="contact__form-field">
-              <label class="contact__form-label" for="name">Name</label>
-              <input
-                required
-                placeholder="Enter Your Name"
-                type="text"
-                class="contact__form-input"
-                name="name"
-                id="name"
-              />
-            </div>
-            <div class="contact__form-field">
               <label class="contact__form-label" for="email">Email</label>
               <input
                 required
                 placeholder="Enter Your Email"
-                type="text"
+                type="email"
                 class="contact__form-input"
                 name="email"
                 id="email"
@@ -444,7 +432,6 @@
             <button type="submit" class="btn btn--theme contact__btn">
               Submit
             </button>
-          </form>
         </div>
       </div>
     </section>
