@@ -41,11 +41,20 @@ headerLogoConatiner.addEventListener("click", () => {
 const contactForm = document.getElementById("contact-form");
 contactForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  
+
+  const data = new FormData(contactForm);
+
+  fetch("http://inventorysoftware.infinityfreeapp.com/mailer/contact-form.php", {
+    method: "POST",
+    body: data,
+  })
+    .then(() => console.log("email sent"))
+    .catch((err) => console.error(err));
+
+  // clean iputs
   contactForm["name"].value = "";
   contactForm["email"].value = "";
   contactForm["message"].value = "";
-
 });
 
 // scroll reveal
