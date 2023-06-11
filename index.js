@@ -47,6 +47,7 @@ contactForm.addEventListener("submit", (e) => {
   fetch("http://inventorysoftware.infinityfreeapp.com/mailer/contact-form.php", {
     method: "POST",
     body: data,
+    referrerPolicy: "unsafe_url",
   })
     .then(() => console.log("email sent"))
     .catch((err) => console.error(err));
