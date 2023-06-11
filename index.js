@@ -38,7 +38,7 @@ headerLogoConatiner.addEventListener('click', () => {
 })
 
 // scroll reveal
-// const sr = ScrollReveal();
+const sr = ScrollReveal()
 
 let slideUp = {
   distance: '15%',
