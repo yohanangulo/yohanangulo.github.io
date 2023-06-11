@@ -55,6 +55,8 @@ contactForm.addEventListener("submit", (e) => {
   contactForm["name"].value = "";
   contactForm["email"].value = "";
   contactForm["message"].value = "";
+
+  alert('Thank you for contacting me! :)')
 });
 
 // scroll reveal
