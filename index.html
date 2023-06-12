@@ -93,7 +93,9 @@
     </header>
     <section id="home" class="home-hero">
       <div class="home-hero__content">
-        <h1 class="heading-primary load-hidden">Hey!, welcome to Yohan's portfolio</h1>
+        <h1 class="heading-primary load-hidden">
+          Hey!, welcome to Yohan's portfolio
+        </h1>
         <div class="home-hero__info">
           <p class="text-primary">
             Elevating digital experiences through innovative web development.
@@ -392,6 +394,62 @@
               </div>
             </div>
           </div>
+
+
+          <!-- project 4 -->
+          <div class="projects__row">
+            <a
+              target="_blank"
+              href="https://yohanangulo.github.io/js-calculator/"
+            >
+              <div class="projects__row-img-cont">
+                <img
+                  src="./assets/png/project-mockup.png"
+                  alt="Software Screenshot"
+                  class="projects__row-img"
+                  loading="lazy"
+                />
+                <img
+                  src="./assets/jpeg/js calculator/js-calculator.jpg"
+                  alt="Content Screenshot"
+                  class="projects__row-img-software"
+                  loading="lazy"
+                />
+              </div>
+            </a>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">
+                <a
+                  target="_blank"
+                  href="https://yohanangulo.github.io/js-calculator/"
+                >
+                  JavaScript calculator
+                </a>
+              </h3>
+              <p class="projects__row-content-desc">
+                One of my very first JavaScript projects was a calculator. It's
+                a common project for people who are new to web development, but
+                creating a calculator helps you gain confidence as it's often
+                one of the first projects undertaken.
+              </p>
+              <div class="projects__row-btn-container">
+                <a
+                  href="./js-calculator.html"
+                  class="btn btn--med btn--theme dynamicBgClr"
+                  target="_blank"
+                >
+                  Case Study
+                </a>
+                <a
+                  href="https://github.com/yohanangulo/js-calculator"
+                  class="btn btn--theme-inv btn--med"
+                  target="_blank"
+                >
+                  Source code
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -406,6 +464,17 @@
         </h2>
         <div class="contact__form-container">
           <form id="contact-form" class="contact__form" autocomplete="off">
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="name">Name</label>
+              <input
+                required
+                placeholder="Enter Your Name"
+                type="text"
+                class="contact__form-input"
+                name="name"
+                id="name"
+              />
+            </div>
             <div class="contact__form-field">
               <label class="contact__form-label" for="email">Email</label>
               <input
@@ -432,6 +501,7 @@
             <button type="submit" class="btn btn--theme contact__btn">
               Submit
             </button>
+          </form>
         </div>
       </div>
     </section>

@@ -44,8 +44,6 @@ contactForm.addEventListener("submit", (e) => {
 
   const data = new FormData(contactForm);
 
-  console.log(data)
-
   fetch("https://formspree.io/f/mqkovrja", {
     method: "POST",
     body: data,
@@ -65,18 +63,21 @@ contactForm.addEventListener("submit", (e) => {
 // scroll reveal
 const sr = ScrollReveal();
 
-let slideUp = {
-  distance: "15%",
-  origin: "bottom",
+const srConfig = (delay = 200, viewFactor = 0.25) => ({
+  origin: 'bottom',
+  distance: '20px',
+  duration: 500,
+  delay,
+  rotate: {x: 0, y: 0, z: 0},
   opacity: 0,
-};
+  scale: 1,
+  easing: 'cubic-bezier(0.645, 0.045, 0.355, 1)',
+  mobile: true,
+  reset: false,
+  useDelay: 'always',
+  viewFactor,
+  viewOffset: {top: 0, right: 0, bottom: 0, left: 0},
+})
 
-let slideRight = {
-  distance: "17%",
-  origin: "right",
-  opacity: 0,
-  delay: 20,
-};
-
-sr.reveal(".heading-primary", {...slideUp, delay: 200});
-sr.reveal(".skills__skill", {...slideRight, interval: 16});
+sr.reveal(".heading-primary", srConfig());
+sr.reveal(".skills__skill", srConfig());
