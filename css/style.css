@@ -76,6 +76,10 @@ textarea {
   resize: none;
 }
 
+html.sr .load-hidden {
+  visibility: hidden;
+}
+
 .heading-primary {
   font-size: 6rem;
   text-transform: uppercase;

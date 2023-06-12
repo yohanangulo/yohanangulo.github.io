@@ -62,3 +62,7 @@ button {
 textarea {
   resize: none;
 }
+
+html.sr .load-hidden {
+  visibility: hidden;
+}
