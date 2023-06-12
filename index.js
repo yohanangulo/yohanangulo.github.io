@@ -68,15 +68,15 @@ const sr = ScrollReveal();
 let slideUp = {
   distance: "15%",
   origin: "bottom",
-  opacity: null,
+  opacity: 0,
 };
 
 let slideRight = {
-  distance: "20%",
+  distance: "17%",
   origin: "right",
   opacity: 0,
   delay: 20,
 };
 
-sr.reveal(".heading-primary", slideUp);
-sr.reveal(".skills__skill", { ...slideRight, interval: 1 });
+sr.reveal(".heading-primary", {...slideUp, delay: 200});
+sr.reveal(".skills__skill", {...slideRight, interval: 16});
