@@ -127,6 +127,11 @@
 
 .projects {
 
+  &__show-more-cont {
+    display: flex;
+    justify-content: center;
+    margin-top: 9rem;
+  }
   
   &__row {
     display: grid;

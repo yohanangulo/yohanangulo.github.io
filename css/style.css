@@ -357,6 +357,11 @@ html.sr .heading-primary {
   margin-bottom: 4rem;
 }
 
+.projects__show-more-cont {
+  display: flex;
+  justify-content: center;
+  margin-top: 9rem;
+}
 .projects__row {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
