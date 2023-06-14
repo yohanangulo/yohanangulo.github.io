@@ -238,7 +238,7 @@ html.sr .heading-primary {
 
 .home-hero {
   color: #fff;
-  background: linear-gradient(to right, rgba(27, 152, 193, 0.8), rgba(27, 152, 193, 0.8)), url(../../assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(27, 152, 193, 0.8), rgba(27, 152, 193, 0.8)), url(../assets/svg/common-bg.svg);
   background-position: center;
   height: 100vh;
   min-height: 80rem;
@@ -435,7 +435,7 @@ html.sr .heading-primary {
 }
 
 .contact {
-  background: linear-gradient(to right, rgba(27, 152, 193, 0.8), rgba(27, 152, 193, 0.8)), url(../../assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(27, 152, 193, 0.8), rgba(27, 152, 193, 0.8)), url(../assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center;
 }
@@ -539,7 +539,7 @@ html.sr .heading-primary {
 
 .project-cs-hero {
   color: #fff;
-  background: linear-gradient(to right, rgba(27, 152, 193, 0.8), rgba(27, 152, 193, 0.8)), url(../../assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(27, 152, 193, 0.8), rgba(27, 152, 193, 0.8)), url(../assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center;
   position: relative;
