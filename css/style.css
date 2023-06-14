@@ -76,7 +76,11 @@ textarea {
   resize: none;
 }
 
-html.sr .load-hidden {
+html.sr .projects__row,
+html.sr .skills__skill,
+html.sr .heading,
+html.sr .about__content,
+html.sr .heading-primary {
   visibility: hidden;
 }
 

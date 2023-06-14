@@ -61,10 +61,8 @@ contactForm.addEventListener("submit", (e) => {
 });
 
 // scroll reveal
-const sr = ScrollReveal();
-
-const srConfig = (delay = 200, viewFactor = 0.25) => ({
-  origin: 'bottom',
+const srConfig = (delay = 200, viewFactor = 0.25, origin = 'bottom') => ({
+  origin,
   distance: '20px',
   duration: 500,
   delay,
@@ -76,8 +74,15 @@ const srConfig = (delay = 200, viewFactor = 0.25) => ({
   reset: false,
   useDelay: 'always',
   viewFactor,
-  viewOffset: {top: 0, right: 0, bottom: 0, left: 0},
+  viewOffset: {top: 88, right: 0, bottom: 0, left: 0},
 })
 
+const sr = ScrollReveal();
+
+sr.reveal(".heading", srConfig());
 sr.reveal(".heading-primary", srConfig());
 sr.reveal(".skills__skill", srConfig());
+sr.reveal(".about__content", srConfig());
+sr.reveal("footer .main-container", srConfig());
+sr.reveal(".contact__form-container", srConfig());
+sr.reveal('.projects__row', srConfig(undefined, 0.35));
