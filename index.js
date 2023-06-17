@@ -74,18 +74,53 @@ const srConfig = (delay = 200, viewFactor = 0.25, origin = 'bottom') => ({
   reset: false,
   useDelay: 'always',
   viewFactor,
-  viewOffset: {top: 88, right: 0, bottom: 0, left: 0},
+  viewOffset: {top: 0, right: 0, bottom: 0, left: 0},
 })
 
 const sr = ScrollReveal();
 window.onload = () => {
+  // headings
   sr.reveal(".heading", srConfig());
+
+  // welcome message
   sr.reveal(".heading-primary", srConfig());
+
+  // subtitle - 2nd
+  sr.reveal('.home-hero__info', srConfig(500))
+  
+  // cta container
+  sr.reveal('.home-hero__cta', {...srConfig(900), viewOffset: {bottom: -500}})
+  
+  // social links 
+  sr.reveal(".home-hero__socials", srConfig(1300, undefined, 'left'));
+  sr.reveal(".home-hero__social .home-hero__social-icon", {interval: 150, delay: 1700});
+
+  // header
+  sr.reveal(".header", srConfig(2400, undefined, 'top'))
+
+  // navigation
+  sr.reveal('.header__content', {
+    duration: 2200,
+    opacity: 0,
+    scale: 0.97,
+    delay: 2500
+  })
+
+  //---
+  
+  // skills
   sr.reveal(".skills__skill", srConfig());
-  sr.reveal(".about__content", srConfig());
-  sr.reveal("footer .main-container", srConfig());
-  sr.reveal(".contact__form-container", srConfig());
-  sr.reveal(".home-hero__socials", srConfig(400, undefined, 'left'));
-  sr.reveal(".home-hero__social .home-hero__social-icon", {interval: 150, delay: 800});
+  
+  // projects
   sr.reveal('.projects__row', srConfig(undefined, 0.35));
+  
+  // abount content
+  sr.reveal(".about__content", srConfig());
+  
+  // footer
+  sr.reveal("footer .main-container", srConfig());
+
+  // contact form
+  sr.reveal(".contact__form-container", srConfig());
+
 }
