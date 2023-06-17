@@ -61,6 +61,9 @@ contactForm.addEventListener("submit", (e) => {
 });
 
 // scroll reveal
+// hide scroll
+document.body.style.overflow = "hidden"
+
 const srConfig = (delay = 200, viewFactor = 0.25, origin = 'bottom') => ({
   origin,
   distance: '20px',
@@ -79,6 +82,8 @@ const srConfig = (delay = 200, viewFactor = 0.25, origin = 'bottom') => ({
 
 const sr = ScrollReveal();
 window.onload = () => {
+  document.body.style.overflow = "auto"
+
   // headings
   sr.reveal(".heading", srConfig());
 
@@ -86,24 +91,24 @@ window.onload = () => {
   sr.reveal(".heading-primary", srConfig());
 
   // subtitle - 2nd
-  sr.reveal('.home-hero__info', srConfig(500))
+  sr.reveal('.home-hero__info', srConfig(300))
   
   // cta container
-  sr.reveal('.home-hero__cta', {...srConfig(900), viewOffset: {bottom: -500}})
+  sr.reveal('.home-hero__cta', {...srConfig(400), viewOffset: {bottom: -500}})
   
   // social links 
-  sr.reveal(".home-hero__socials", srConfig(1300, undefined, 'left'));
-  sr.reveal(".home-hero__social .home-hero__social-icon", {interval: 150, delay: 1700});
+  sr.reveal(".home-hero__socials", srConfig(500, undefined, 'left'));
+  sr.reveal(".home-hero__social .home-hero__social-icon", {interval: 100, delay: 800});
 
   // header
-  sr.reveal(".header", srConfig(2400, undefined, 'top'))
+  sr.reveal(".header", srConfig(1400, undefined, 'top'))
 
   // navigation
   sr.reveal('.header__content', {
     duration: 2200,
     opacity: 0,
     scale: 0.97,
-    delay: 2500
+    delay: 1500 
   })
 
   //---
