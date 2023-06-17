@@ -76,6 +76,11 @@ textarea {
   resize: none;
 }
 
+html.sr .header,
+html.sr .header__content,
+html.sr .home-hero__cta,
+html.sr .home-hero__info,
+html.sr .home-hero__socials,
 html.sr .projects__row,
 html.sr .skills__skill,
 html.sr .heading,
