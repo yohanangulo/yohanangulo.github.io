@@ -56,12 +56,13 @@ contactForm.addEventListener("submit", (e) => {
 
   // clean iputs
   contactForm.reset();
-
+  
   alert("Thank you reaching out to me! :)");
 });
 
 // scroll reveal
 // hide scroll
+window.scrollTo({top: 0})
 document.body.style.overflow = "hidden"
 
 const srConfig = (delay = 200, viewFactor = 0.25, origin = 'bottom') => ({
@@ -109,7 +110,7 @@ window.onload = () => {
     duration: 2200,
     opacity: 0,
     scale: 0.97,
-    delay: headerDelay + 80 
+    delay: headerDelay + 80
   })
 
   //---
