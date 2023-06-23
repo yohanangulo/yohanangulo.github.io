@@ -56,12 +56,13 @@ contactForm.addEventListener("submit", (e) => {
 
   // clean iputs
   contactForm.reset();
-
+  
   alert("Thank you reaching out to me! :)");
 });
 
 // scroll reveal
 // hide scroll
+window.scrollTo({top: 0})
 document.body.style.overflow = "hidden"
 
 const srConfig = (delay = 200, viewFactor = 0.25, origin = 'bottom') => ({
@@ -101,14 +102,15 @@ window.onload = () => {
   sr.reveal(".home-hero__social .home-hero__social-icon", {interval: 100, delay: 800});
 
   // header
-  sr.reveal(".header", srConfig(1400, undefined, 'top'))
+  const headerDelay = window.innerWidth < 899 ? 700 : 1400
+  sr.reveal(".header", srConfig(headerDelay, undefined, 'top'))
 
   // navigation
   sr.reveal('.header__content', {
     duration: 2200,
     opacity: 0,
     scale: 0.97,
-    delay: 1500 
+    delay: headerDelay + 80
   })
 
   //---
