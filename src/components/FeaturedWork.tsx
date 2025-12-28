@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 import projects from '@/../data/featuredProjects.json'
 
@@ -144,13 +145,13 @@ export default function FeaturedWork() {
 
       {/* View All Projects Link */}
       <div className="mt-12 text-center">
-        <a
+        <Link
           className="inline-flex items-center gap-2 px-6 py-3 border border-border-dark text-white rounded-lg hover:bg-surface-dark transition-colors font-medium"
-          href="#"
+          href="/projects"
         >
           <span className="material-icons">hub</span>
           View All Projects
-        </a>
+        </Link>
       </div>
     </section>
   )

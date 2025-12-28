@@ -1,6 +1,5 @@
 [
   {
-    "id": 1,
     "title": "FinTrack Mobile",
     "description": "A high-performance financial tracking application with complex data visualization and offline-first capabilities.",
     "images": [
@@ -12,7 +11,6 @@
     "categories": ["iOS", "Android"]
   },
   {
-    "id": 2,
     "title": "NeoHealth Telemed",
     "description": "Comprehensive telemedicine suite featuring real-time WebRTC video calls and secure chat functionality.",
     "images": [
@@ -24,7 +22,6 @@
     "categories": ["iOS", "Android"]
   },
   {
-    "id": 3,
     "title": "AeroTravel Booking",
     "description": "Dynamic flight booking system with hero animations, complex transitions, and sliver scroll effects.",
     "images": [
@@ -36,7 +33,6 @@
     "categories": ["iOS", "Android"]
   },
   {
-    "id": 4,
     "title": "ShopFlow Mobile",
     "description": "Cross-platform e-commerce solution focusing on smooth UI/UX, integrated payments, and deep linking.",
     "images": [
@@ -48,7 +44,6 @@
     "categories": ["iOS", "Android"]
   },
   {
-    "id": 5,
     "title": "TaskMaster Pro",
     "description": "Productivity suite leveraging Flutter's platform channels for native integration and local notifications.",
     "images": [
@@ -60,7 +55,116 @@
     "categories": ["iOS", "Android"]
   },
   {
-    "id": 6,
+    "title": "CryptoWallet X",
+    "description": "Secure, non-custodial wallet with real-time websocket updates and biometric authentication.",
+    "images": [
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCYieosSjwoLJjC1WWH7GMtfQNx-OZSErJ1T5tFmkc7TA76mXjUpOdGAm5nIS0UMwCSauz_0b6nYQ0ltVLWk5pYxkuCiArfCXNUldrwIdivcmiIRy9f7StsRPI_ZIlguRiXhtrSV5BaTrNnzefBnLH8X80Pkx5iQshyxfup1THEdI33EMLO4K66tIK9jI0oXEwtbc41YG3JXGmbI-CLb__DFzWaN46FLdV9OARbyjID2UXoqvbWbIWrVDbYy16pKUr7jskbX1F7zRQ",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuAaB-3RH1_XogKHseFzazRO7EVpnm0o8_dIU85WjLt2EP2QnNe7n4WUWz0q4IP4CTVXBkLR58wThPqtTjCCioZYMiEqN1kKZwIECeLs5Uz14W4eHO80BMQtunrwd45-7UZCpI8y0OzfOTZl6Zk-R-I9GpD10JSSU6NdjjMuRYjoLUEy37F9WepqDSP4moKIowpoFhYm5ooDpe7Q-zu3BHTooV6IDXUf4Ob9KW22Ngo9sAFmI3RJ-faKA9keRz1gK5WAviaLNVdfg1k",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuA88Uyx2SGV-D5o6bHmPnTyhzJeMNmYyASs4gly6OIVkj_PRIOwzyXmVqcwoqlfDxYkfQ9wikha2QtuPWOfYZ3lb6h-AnyFr_9yd2Nl-jUkMuALtAa5hgV6iZFnPDoSOx7pz001GvifD2BdnvFWMVPXvrEOCM6SbgSWSYQdTpDhJxrdGQ1cviZvll5LZPhIPkgyjb5fOW22VGsicBDeQxfIgKOs97kifB6Gaxj4hMn9q5TONkezcUlRnJZuNKb039UWuT3KyAB8-tE"
+    ],
+    "tags": ["WebSockets", "Biometrics", "Encryption"],
+    "categories": ["iOS", "Android"]
+  },
+  {
+    "title": "CryptoWallet X",
+    "description": "Secure, non-custodial wallet with real-time websocket updates and biometric authentication.",
+    "images": [
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCYieosSjwoLJjC1WWH7GMtfQNx-OZSErJ1T5tFmkc7TA76mXjUpOdGAm5nIS0UMwCSauz_0b6nYQ0ltVLWk5pYxkuCiArfCXNUldrwIdivcmiIRy9f7StsRPI_ZIlguRiXhtrSV5BaTrNnzefBnLH8X80Pkx5iQshyxfup1THEdI33EMLO4K66tIK9jI0oXEwtbc41YG3JXGmbI-CLb__DFzWaN46FLdV9OARbyjID2UXoqvbWbIWrVDbYy16pKUr7jskbX1F7zRQ",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuAaB-3RH1_XogKHseFzazRO7EVpnm0o8_dIU85WjLt2EP2QnNe7n4WUWz0q4IP4CTVXBkLR58wThPqtTjCCioZYMiEqN1kKZwIECeLs5Uz14W4eHO80BMQtunrwd45-7UZCpI8y0OzfOTZl6Zk-R-I9GpD10JSSU6NdjjMuRYjoLUEy37F9WepqDSP4moKIowpoFhYm5ooDpe7Q-zu3BHTooV6IDXUf4Ob9KW22Ngo9sAFmI3RJ-faKA9keRz1gK5WAviaLNVdfg1k",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuA88Uyx2SGV-D5o6bHmPnTyhzJeMNmYyASs4gly6OIVkj_PRIOwzyXmVqcwoqlfDxYkfQ9wikha2QtuPWOfYZ3lb6h-AnyFr_9yd2Nl-jUkMuALtAa5hgV6iZFnPDoSOx7pz001GvifD2BdnvFWMVPXvrEOCM6SbgSWSYQdTpDhJxrdGQ1cviZvll5LZPhIPkgyjb5fOW22VGsicBDeQxfIgKOs97kifB6Gaxj4hMn9q5TONkezcUlRnJZuNKb039UWuT3KyAB8-tE"
+    ],
+    "tags": ["WebSockets", "Biometrics", "Encryption"],
+    "categories": ["iOS", "Android"]
+  },
+  {
+    "title": "CryptoWallet X",
+    "description": "Secure, non-custodial wallet with real-time websocket updates and biometric authentication.",
+    "images": [
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCYieosSjwoLJjC1WWH7GMtfQNx-OZSErJ1T5tFmkc7TA76mXjUpOdGAm5nIS0UMwCSauz_0b6nYQ0ltVLWk5pYxkuCiArfCXNUldrwIdivcmiIRy9f7StsRPI_ZIlguRiXhtrSV5BaTrNnzefBnLH8X80Pkx5iQshyxfup1THEdI33EMLO4K66tIK9jI0oXEwtbc41YG3JXGmbI-CLb__DFzWaN46FLdV9OARbyjID2UXoqvbWbIWrVDbYy16pKUr7jskbX1F7zRQ",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuAaB-3RH1_XogKHseFzazRO7EVpnm0o8_dIU85WjLt2EP2QnNe7n4WUWz0q4IP4CTVXBkLR58wThPqtTjCCioZYMiEqN1kKZwIECeLs5Uz14W4eHO80BMQtunrwd45-7UZCpI8y0OzfOTZl6Zk-R-I9GpD10JSSU6NdjjMuRYjoLUEy37F9WepqDSP4moKIowpoFhYm5ooDpe7Q-zu3BHTooV6IDXUf4Ob9KW22Ngo9sAFmI3RJ-faKA9keRz1gK5WAviaLNVdfg1k",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuA88Uyx2SGV-D5o6bHmPnTyhzJeMNmYyASs4gly6OIVkj_PRIOwzyXmVqcwoqlfDxYkfQ9wikha2QtuPWOfYZ3lb6h-AnyFr_9yd2Nl-jUkMuALtAa5hgV6iZFnPDoSOx7pz001GvifD2BdnvFWMVPXvrEOCM6SbgSWSYQdTpDhJxrdGQ1cviZvll5LZPhIPkgyjb5fOW22VGsicBDeQxfIgKOs97kifB6Gaxj4hMn9q5TONkezcUlRnJZuNKb039UWuT3KyAB8-tE"
+    ],
+    "tags": ["WebSockets", "Biometrics", "Encryption"],
+    "categories": ["iOS", "Android"]
+  },
+  {
+    "title": "CryptoWallet X",
+    "description": "Secure, non-custodial wallet with real-time websocket updates and biometric authentication.",
+    "images": [
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCYieosSjwoLJjC1WWH7GMtfQNx-OZSErJ1T5tFmkc7TA76mXjUpOdGAm5nIS0UMwCSauz_0b6nYQ0ltVLWk5pYxkuCiArfCXNUldrwIdivcmiIRy9f7StsRPI_ZIlguRiXhtrSV5BaTrNnzefBnLH8X80Pkx5iQshyxfup1THEdI33EMLO4K66tIK9jI0oXEwtbc41YG3JXGmbI-CLb__DFzWaN46FLdV9OARbyjID2UXoqvbWbIWrVDbYy16pKUr7jskbX1F7zRQ",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuAaB-3RH1_XogKHseFzazRO7EVpnm0o8_dIU85WjLt2EP2QnNe7n4WUWz0q4IP4CTVXBkLR58wThPqtTjCCioZYMiEqN1kKZwIECeLs5Uz14W4eHO80BMQtunrwd45-7UZCpI8y0OzfOTZl6Zk-R-I9GpD10JSSU6NdjjMuRYjoLUEy37F9WepqDSP4moKIowpoFhYm5ooDpe7Q-zu3BHTooV6IDXUf4Ob9KW22Ngo9sAFmI3RJ-faKA9keRz1gK5WAviaLNVdfg1k",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuA88Uyx2SGV-D5o6bHmPnTyhzJeMNmYyASs4gly6OIVkj_PRIOwzyXmVqcwoqlfDxYkfQ9wikha2QtuPWOfYZ3lb6h-AnyFr_9yd2Nl-jUkMuALtAa5hgV6iZFnPDoSOx7pz001GvifD2BdnvFWMVPXvrEOCM6SbgSWSYQdTpDhJxrdGQ1cviZvll5LZPhIPkgyjb5fOW22VGsicBDeQxfIgKOs97kifB6Gaxj4hMn9q5TONkezcUlRnJZuNKb039UWuT3KyAB8-tE"
+    ],
+    "tags": ["WebSockets", "Biometrics", "Encryption"],
+    "categories": ["iOS", "Android"]
+  },
+  {
+    "title": "CryptoWallet X",
+    "description": "Secure, non-custodial wallet with real-time websocket updates and biometric authentication.",
+    "images": [
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCYieosSjwoLJjC1WWH7GMtfQNx-OZSErJ1T5tFmkc7TA76mXjUpOdGAm5nIS0UMwCSauz_0b6nYQ0ltVLWk5pYxkuCiArfCXNUldrwIdivcmiIRy9f7StsRPI_ZIlguRiXhtrSV5BaTrNnzefBnLH8X80Pkx5iQshyxfup1THEdI33EMLO4K66tIK9jI0oXEwtbc41YG3JXGmbI-CLb__DFzWaN46FLdV9OARbyjID2UXoqvbWbIWrVDbYy16pKUr7jskbX1F7zRQ",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuAaB-3RH1_XogKHseFzazRO7EVpnm0o8_dIU85WjLt2EP2QnNe7n4WUWz0q4IP4CTVXBkLR58wThPqtTjCCioZYMiEqN1kKZwIECeLs5Uz14W4eHO80BMQtunrwd45-7UZCpI8y0OzfOTZl6Zk-R-I9GpD10JSSU6NdjjMuRYjoLUEy37F9WepqDSP4moKIowpoFhYm5ooDpe7Q-zu3BHTooV6IDXUf4Ob9KW22Ngo9sAFmI3RJ-faKA9keRz1gK5WAviaLNVdfg1k",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuA88Uyx2SGV-D5o6bHmPnTyhzJeMNmYyASs4gly6OIVkj_PRIOwzyXmVqcwoqlfDxYkfQ9wikha2QtuPWOfYZ3lb6h-AnyFr_9yd2Nl-jUkMuALtAa5hgV6iZFnPDoSOx7pz001GvifD2BdnvFWMVPXvrEOCM6SbgSWSYQdTpDhJxrdGQ1cviZvll5LZPhIPkgyjb5fOW22VGsicBDeQxfIgKOs97kifB6Gaxj4hMn9q5TONkezcUlRnJZuNKb039UWuT3KyAB8-tE"
+    ],
+    "tags": ["WebSockets", "Biometrics", "Encryption"],
+    "categories": ["iOS", "Android"]
+  },
+  {
+    "title": "CryptoWallet X",
+    "description": "Secure, non-custodial wallet with real-time websocket updates and biometric authentication.",
+    "images": [
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCYieosSjwoLJjC1WWH7GMtfQNx-OZSErJ1T5tFmkc7TA76mXjUpOdGAm5nIS0UMwCSauz_0b6nYQ0ltVLWk5pYxkuCiArfCXNUldrwIdivcmiIRy9f7StsRPI_ZIlguRiXhtrSV5BaTrNnzefBnLH8X80Pkx5iQshyxfup1THEdI33EMLO4K66tIK9jI0oXEwtbc41YG3JXGmbI-CLb__DFzWaN46FLdV9OARbyjID2UXoqvbWbIWrVDbYy16pKUr7jskbX1F7zRQ",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuAaB-3RH1_XogKHseFzazRO7EVpnm0o8_dIU85WjLt2EP2QnNe7n4WUWz0q4IP4CTVXBkLR58wThPqtTjCCioZYMiEqN1kKZwIECeLs5Uz14W4eHO80BMQtunrwd45-7UZCpI8y0OzfOTZl6Zk-R-I9GpD10JSSU6NdjjMuRYjoLUEy37F9WepqDSP4moKIowpoFhYm5ooDpe7Q-zu3BHTooV6IDXUf4Ob9KW22Ngo9sAFmI3RJ-faKA9keRz1gK5WAviaLNVdfg1k",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuA88Uyx2SGV-D5o6bHmPnTyhzJeMNmYyASs4gly6OIVkj_PRIOwzyXmVqcwoqlfDxYkfQ9wikha2QtuPWOfYZ3lb6h-AnyFr_9yd2Nl-jUkMuALtAa5hgV6iZFnPDoSOx7pz001GvifD2BdnvFWMVPXvrEOCM6SbgSWSYQdTpDhJxrdGQ1cviZvll5LZPhIPkgyjb5fOW22VGsicBDeQxfIgKOs97kifB6Gaxj4hMn9q5TONkezcUlRnJZuNKb039UWuT3KyAB8-tE"
+    ],
+    "tags": ["WebSockets", "Biometrics", "Encryption"],
+    "categories": ["iOS", "Android"]
+  },
+  {
+    "title": "CryptoWallet X",
+    "description": "Secure, non-custodial wallet with real-time websocket updates and biometric authentication.",
+    "images": [
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCYieosSjwoLJjC1WWH7GMtfQNx-OZSErJ1T5tFmkc7TA76mXjUpOdGAm5nIS0UMwCSauz_0b6nYQ0ltVLWk5pYxkuCiArfCXNUldrwIdivcmiIRy9f7StsRPI_ZIlguRiXhtrSV5BaTrNnzefBnLH8X80Pkx5iQshyxfup1THEdI33EMLO4K66tIK9jI0oXEwtbc41YG3JXGmbI-CLb__DFzWaN46FLdV9OARbyjID2UXoqvbWbIWrVDbYy16pKUr7jskbX1F7zRQ",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuAaB-3RH1_XogKHseFzazRO7EVpnm0o8_dIU85WjLt2EP2QnNe7n4WUWz0q4IP4CTVXBkLR58wThPqtTjCCioZYMiEqN1kKZwIECeLs5Uz14W4eHO80BMQtunrwd45-7UZCpI8y0OzfOTZl6Zk-R-I9GpD10JSSU6NdjjMuRYjoLUEy37F9WepqDSP4moKIowpoFhYm5ooDpe7Q-zu3BHTooV6IDXUf4Ob9KW22Ngo9sAFmI3RJ-faKA9keRz1gK5WAviaLNVdfg1k",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuA88Uyx2SGV-D5o6bHmPnTyhzJeMNmYyASs4gly6OIVkj_PRIOwzyXmVqcwoqlfDxYkfQ9wikha2QtuPWOfYZ3lb6h-AnyFr_9yd2Nl-jUkMuALtAa5hgV6iZFnPDoSOx7pz001GvifD2BdnvFWMVPXvrEOCM6SbgSWSYQdTpDhJxrdGQ1cviZvll5LZPhIPkgyjb5fOW22VGsicBDeQxfIgKOs97kifB6Gaxj4hMn9q5TONkezcUlRnJZuNKb039UWuT3KyAB8-tE"
+    ],
+    "tags": ["WebSockets", "Biometrics", "Encryption"],
+    "categories": ["iOS", "Android"]
+  },
+  {
+    "title": "CryptoWallet X",
+    "description": "Secure, non-custodial wallet with real-time websocket updates and biometric authentication.",
+    "images": [
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCYieosSjwoLJjC1WWH7GMtfQNx-OZSErJ1T5tFmkc7TA76mXjUpOdGAm5nIS0UMwCSauz_0b6nYQ0ltVLWk5pYxkuCiArfCXNUldrwIdivcmiIRy9f7StsRPI_ZIlguRiXhtrSV5BaTrNnzefBnLH8X80Pkx5iQshyxfup1THEdI33EMLO4K66tIK9jI0oXEwtbc41YG3JXGmbI-CLb__DFzWaN46FLdV9OARbyjID2UXoqvbWbIWrVDbYy16pKUr7jskbX1F7zRQ",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuAaB-3RH1_XogKHseFzazRO7EVpnm0o8_dIU85WjLt2EP2QnNe7n4WUWz0q4IP4CTVXBkLR58wThPqtTjCCioZYMiEqN1kKZwIECeLs5Uz14W4eHO80BMQtunrwd45-7UZCpI8y0OzfOTZl6Zk-R-I9GpD10JSSU6NdjjMuRYjoLUEy37F9WepqDSP4moKIowpoFhYm5ooDpe7Q-zu3BHTooV6IDXUf4Ob9KW22Ngo9sAFmI3RJ-faKA9keRz1gK5WAviaLNVdfg1k",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuA88Uyx2SGV-D5o6bHmPnTyhzJeMNmYyASs4gly6OIVkj_PRIOwzyXmVqcwoqlfDxYkfQ9wikha2QtuPWOfYZ3lb6h-AnyFr_9yd2Nl-jUkMuALtAa5hgV6iZFnPDoSOx7pz001GvifD2BdnvFWMVPXvrEOCM6SbgSWSYQdTpDhJxrdGQ1cviZvll5LZPhIPkgyjb5fOW22VGsicBDeQxfIgKOs97kifB6Gaxj4hMn9q5TONkezcUlRnJZuNKb039UWuT3KyAB8-tE"
+    ],
+    "tags": ["WebSockets", "Biometrics", "Encryption"],
+    "categories": ["iOS", "Android"]
+  },
+  {
+    "title": "CryptoWallet X",
+    "description": "Secure, non-custodial wallet with real-time websocket updates and biometric authentication.",
+    "images": [
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCYieosSjwoLJjC1WWH7GMtfQNx-OZSErJ1T5tFmkc7TA76mXjUpOdGAm5nIS0UMwCSauz_0b6nYQ0ltVLWk5pYxkuCiArfCXNUldrwIdivcmiIRy9f7StsRPI_ZIlguRiXhtrSV5BaTrNnzefBnLH8X80Pkx5iQshyxfup1THEdI33EMLO4K66tIK9jI0oXEwtbc41YG3JXGmbI-CLb__DFzWaN46FLdV9OARbyjID2UXoqvbWbIWrVDbYy16pKUr7jskbX1F7zRQ",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuAaB-3RH1_XogKHseFzazRO7EVpnm0o8_dIU85WjLt2EP2QnNe7n4WUWz0q4IP4CTVXBkLR58wThPqtTjCCioZYMiEqN1kKZwIECeLs5Uz14W4eHO80BMQtunrwd45-7UZCpI8y0OzfOTZl6Zk-R-I9GpD10JSSU6NdjjMuRYjoLUEy37F9WepqDSP4moKIowpoFhYm5ooDpe7Q-zu3BHTooV6IDXUf4Ob9KW22Ngo9sAFmI3RJ-faKA9keRz1gK5WAviaLNVdfg1k",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuA88Uyx2SGV-D5o6bHmPnTyhzJeMNmYyASs4gly6OIVkj_PRIOwzyXmVqcwoqlfDxYkfQ9wikha2QtuPWOfYZ3lb6h-AnyFr_9yd2Nl-jUkMuALtAa5hgV6iZFnPDoSOx7pz001GvifD2BdnvFWMVPXvrEOCM6SbgSWSYQdTpDhJxrdGQ1cviZvll5LZPhIPkgyjb5fOW22VGsicBDeQxfIgKOs97kifB6Gaxj4hMn9q5TONkezcUlRnJZuNKb039UWuT3KyAB8-tE"
+    ],
+    "tags": ["WebSockets", "Biometrics", "Encryption"],
+    "categories": ["iOS", "Android"]
+  },
+  {
+    "title": "CryptoWallet X",
+    "description": "Secure, non-custodial wallet with real-time websocket updates and biometric authentication.",
+    "images": [
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCYieosSjwoLJjC1WWH7GMtfQNx-OZSErJ1T5tFmkc7TA76mXjUpOdGAm5nIS0UMwCSauz_0b6nYQ0ltVLWk5pYxkuCiArfCXNUldrwIdivcmiIRy9f7StsRPI_ZIlguRiXhtrSV5BaTrNnzefBnLH8X80Pkx5iQshyxfup1THEdI33EMLO4K66tIK9jI0oXEwtbc41YG3JXGmbI-CLb__DFzWaN46FLdV9OARbyjID2UXoqvbWbIWrVDbYy16pKUr7jskbX1F7zRQ",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuAaB-3RH1_XogKHseFzazRO7EVpnm0o8_dIU85WjLt2EP2QnNe7n4WUWz0q4IP4CTVXBkLR58wThPqtTjCCioZYMiEqN1kKZwIECeLs5Uz14W4eHO80BMQtunrwd45-7UZCpI8y0OzfOTZl6Zk-R-I9GpD10JSSU6NdjjMuRYjoLUEy37F9WepqDSP4moKIowpoFhYm5ooDpe7Q-zu3BHTooV6IDXUf4Ob9KW22Ngo9sAFmI3RJ-faKA9keRz1gK5WAviaLNVdfg1k",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuA88Uyx2SGV-D5o6bHmPnTyhzJeMNmYyASs4gly6OIVkj_PRIOwzyXmVqcwoqlfDxYkfQ9wikha2QtuPWOfYZ3lb6h-AnyFr_9yd2Nl-jUkMuALtAa5hgV6iZFnPDoSOx7pz001GvifD2BdnvFWMVPXvrEOCM6SbgSWSYQdTpDhJxrdGQ1cviZvll5LZPhIPkgyjb5fOW22VGsicBDeQxfIgKOs97kifB6Gaxj4hMn9q5TONkezcUlRnJZuNKb039UWuT3KyAB8-tE"
+    ],
+    "tags": ["WebSockets", "Biometrics", "Encryption"],
+    "categories": ["iOS", "Android"]
+  },
+  {
     "title": "CryptoWallet X",
     "description": "Secure, non-custodial wallet with real-time websocket updates and biometric authentication.",
     "images": [

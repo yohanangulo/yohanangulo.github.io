@@ -8,7 +8,11 @@ import Footer from '@/components/Footer'
 export default function Home() {
   return (
     <main className="flex flex-col">
-      <Navigation />
+      <Navigation>
+        <a className="text-slate-300 hover:text-white text-sm font-medium transition-colors" href="#work">
+          Work
+        </a>
+      </Navigation>
       <Hero />
       <Skills />
       <FeaturedWork />
