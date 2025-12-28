@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
 @import 'tailwindcss';
 
 :root {
@@ -9,10 +10,15 @@
 }
 
 @theme {
-  --color-primary: #2b8cee;
+  --color-primary: #13a4ec;
   --color-background-light: #f6f7f8;
-  --color-background-dark: #101922;
-  --color-surface-dark: #192633;
+  --color-background-dark: #101c22;
+  --color-surface-dark: #192b33;
+  --color-surface-border: #233c48;
+  --color-text-secondary: #92b7c9;
+  --color-flutter-blue: #40C4FF;
+  --color-flutter-dark-blue: #02569B;
+  
   --color-border-dark: #324d67;
   --font-display: Inter, sans-serif;
   --font-body: Inter, sans-serif;
@@ -37,7 +43,8 @@ body {
 }
 
 .material-icons,
-.material-icons-outlined {
+.material-icons-outlined,
+.material-symbols-outlined {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
@@ -56,6 +63,11 @@ body {
 
 .material-icons-outlined {
   font-family: 'Material Icons Outlined';
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
 }
 
 .dark {
@@ -78,4 +90,94 @@ body {
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateX(5rem) translateY(4rem) scale(1.1);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes demoGroupHover1 {
+  0% {
+    transform: translateX(0) translateZ(0) rotateY(0deg) scale(1);
+  }
+  50% {
+    transform: translateX(-140px) translateZ(-60px) rotateY(15deg) scale(0.9);
+  }
+  100% {
+    transform: translateX(0) translateZ(0) rotateY(0deg) scale(1);
+  }
+}
+
+@keyframes demoGroupHover2 {
+  0% {
+    transform: translateX(0) translateZ(0) rotateY(0deg) scale(1);
+  }
+  50% {
+    transform: translateX(-70px) translateZ(-30px) rotateY(8deg) scale(0.95);
+  }
+  100% {
+    transform: translateX(0) translateZ(0) rotateY(0deg) scale(1);
+  }
+}
+
+@keyframes demoContainerHover {
+  0% {
+    transform: rotateY(0deg) rotateX(0deg);
+  }
+
+  50% {
+    transform: rotateY(10deg) rotateX(0deg);
+  }
+
+  100% {
+    transform: rotateY(0deg) rotateX(0deg);
+  }
+}
+
+@keyframes demoGroupHover3 {
+  0% {
+    transform: translateX(0) translateZ(0) rotateY(0deg) scale(1);
+  }
+  50% {
+    transform: translateX(0) translateZ(0) rotateY(8deg) scale(1);
+  }
+  100% {
+    transform: translateX(0) translateZ(0) rotateY(0deg) scale(1);
+  }
+}
+
+/* 
+  * -10 5
+  -10 -5
+  10 5
+  10 -5
+*/
+
+.phone-frame-1 {
+  transform: translateY(5rem);
+  opacity: 0;
+  animation: slideInUp 0.8s ease-out 0.2s forwards, demoGroupHover1 2s cubic-bezier(0.4, 0, 0.2, 1) 1.7s forwards;
+}
+
+.phone-frame-2 {
+  transform: translateY(5rem);
+  opacity: 0;
+  animation: slideInUp 0.8s ease-out 0.6s forwards, demoGroupHover2 2s cubic-bezier(0.4, 0, 0.2, 1) 1.7s forwards;
+}
+
+.phone-frame-3 {
+  transform: translateY(5rem);
+  opacity: 0;
+  animation: slideInUp 0.8s ease-out 1s forwards, demoGroupHover3 2s cubic-bezier(0.4, 0, 0.2, 1) 1.7s forwards;
+}
+
+.demo-container {
+  /* animation: demoContainerHover 2s ease-in-out 2.5s forwards; */
 }
