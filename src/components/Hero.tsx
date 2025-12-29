@@ -155,7 +155,7 @@ export default function Hero() {
                   <div className="absolute bottom-8 left-1/2 -translate-x-1/2 w-[90%] p-3 bg-[#0b1117]/80 backdrop-blur-md border border-white/10 rounded-xl flex items-center justify-between shadow-lg">
                     <div className="flex items-center gap-3">
                       <div className="w-10 h-10 rounded-full bg-green-500/10 flex items-center justify-center text-green-400 border border-green-500/20">
-                        <span className="material-icons text-lg">{messages.hero_verified}</span>
+                        <span className="material-icons text-lg">verified</span>
                       </div>
                       <div>
                         <div className="text-[10px] text-slate-400 font-medium uppercase tracking-wider">
