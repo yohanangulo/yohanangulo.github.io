@@ -1,3 +1,5 @@
+import { messages } from '../../data'
+
 export default function Hero() {
   return (
     <section className="relative w-full overflow-hidden pt-20 pb-20 lg:pt-32 lg:pb-32 border-b border-white/5 bg-[#0b1117]">
@@ -11,39 +13,47 @@ export default function Hero() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
               </span>
-              Available for new roles
+              {messages.hero_available_for_new_roles}
             </div>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.1]">
               Engineering <br />
               <span className="text-transparent bg-clip-text bg-linear-to-r from-primary via-blue-400 to-indigo-400">
-                Mobile Excellence
+                {messages.hero_mobile_excellence}
               </span>
             </h1>
-            <p className="text-lg text-slate-400 max-w-xl leading-relaxed">
-              I translate complex requirements into scalable, high-performance Flutter applications. Specialized in clean
-              architecture, advanced state management, and pixel-perfect interactions.
-            </p>
+            <p className="text-lg text-slate-400 max-w-xl leading-relaxed">{messages.hero_translate_requirements}</p>
             <div className="w-full py-6 border-y border-white/5">
               <div className="flex flex-wrap items-center gap-x-12 gap-y-6">
                 <div className="flex flex-col gap-1">
-                  <span className="text-3xl font-bold text-white tracking-tight leading-none">6+</span>
-                  <span className="text-[10px] text-slate-500 font-bold uppercase tracking-wider">Years Exp.</span>
+                  <span className="text-3xl font-bold text-white tracking-tight leading-none">
+                    {messages.hero_years_experience_num}
+                  </span>
+                  <span className="text-[10px] text-slate-500 font-bold uppercase tracking-wider">{messages.hero_years_exp}</span>
                 </div>
                 <div className="flex flex-col gap-1">
-                  <span className="text-3xl font-bold text-white tracking-tight leading-none">100k+</span>
-                  <span className="text-[10px] text-slate-500 font-bold uppercase tracking-wider">Active Users</span>
+                  <span className="text-3xl font-bold text-white tracking-tight leading-none">
+                    {messages.hero_active_users_count}
+                  </span>
+                  <span className="text-[10px] text-slate-500 font-bold uppercase tracking-wider">
+                    {messages.hero_active_users}
+                  </span>
                 </div>
                 <div className="flex flex-col gap-2 pl-6 border-l border-white/10">
-                  <div className="text-[10px] text-slate-500 font-bold uppercase tracking-wider mb-0.5">Key Strengths</div>
+                  <div className="text-[10px] text-slate-500 font-bold uppercase tracking-wider mb-0.5">
+                    {messages.hero_key_strengths}
+                  </div>
                   <div className="flex items-center gap-4 text-sm font-medium text-slate-300">
                     <span className="flex items-center gap-1.5">
-                      <span className="w-1.5 h-1.5 rounded-full bg-blue-500"></span>Architecture
+                      <span className="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+                      {messages.hero_architecture}
                     </span>
                     <span className="flex items-center gap-1.5">
-                      <span className="w-1.5 h-1.5 rounded-full bg-green-500"></span>Performance
+                      <span className="w-1.5 h-1.5 rounded-full bg-green-500"></span>
+                      {messages.hero_performance}
                     </span>
                     <span className="flex items-center gap-1.5">
-                      <span className="w-1.5 h-1.5 rounded-full bg-purple-500"></span>UX/UI
+                      <span className="w-1.5 h-1.5 rounded-full bg-purple-500"></span>
+                      {messages.hero_uiux}
                     </span>
                   </div>
                 </div>
@@ -51,11 +61,11 @@ export default function Hero() {
             </div>
             <div className="flex flex-wrap gap-4 w-full sm:w-auto mt-2">
               <button className="flex-1 sm:flex-none h-12 px-8 bg-white text-background-dark hover:bg-slate-200 text-sm font-bold rounded-lg transition-colors flex items-center justify-center gap-2">
-                View Mobile Projects
+                {messages.hero_view_mob_projects}
                 <span className="material-icons text-[18px]">keyboard_arrow_down</span>
               </button>
               <button className="flex-1 sm:flex-none h-12 px-8 border border-white/10 bg-white/5 hover:bg-white/10 text-white text-sm font-bold rounded-lg transition-all flex items-center justify-center gap-2 backdrop-blur-sm group">
-                Download CV
+                {messages.hero_download_cv}
                 <span className="material-icons text-[18px] text-slate-400 group-hover:text-white transition-colors">
                   download
                 </span>
@@ -145,11 +155,13 @@ export default function Hero() {
                   <div className="absolute bottom-8 left-1/2 -translate-x-1/2 w-[90%] p-3 bg-[#0b1117]/80 backdrop-blur-md border border-white/10 rounded-xl flex items-center justify-between shadow-lg">
                     <div className="flex items-center gap-3">
                       <div className="w-10 h-10 rounded-full bg-green-500/10 flex items-center justify-center text-green-400 border border-green-500/20">
-                        <span className="material-icons text-lg">verified</span>
+                        <span className="material-icons text-lg">{messages.hero_verified}</span>
                       </div>
                       <div>
-                        <div className="text-[10px] text-slate-400 font-medium uppercase tracking-wider">Deployment</div>
-                        <div className="text-sm text-white font-bold">Production Ready</div>
+                        <div className="text-[10px] text-slate-400 font-medium uppercase tracking-wider">
+                          {messages.hero_deployment}
+                        </div>
+                        <div className="text-sm text-white font-bold">{messages.hero_production_ready}</div>
                       </div>
                     </div>
                     <div className="flex gap-1">
