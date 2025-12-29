@@ -132,9 +132,7 @@ export default function AllProjects() {
                           className="relative w-full aspect-9/16 rounded-lg overflow-hidden bg-background-dark border border-surface-border/30"
                         >
                           <div
-                            className={`absolute inset-0 bg-cover bg-center opacity-90 group-hover:opacity-100 transition-opacity duration-500 hover:scale-105 transform ${
-                              idx === 1 ? 'delay-75' : idx === 2 ? 'delay-150' : ''
-                            }`}
+                            className={`absolute inset-0 bg-cover bg-center opacity-90 group-hover:opacity-100 transition-transform duration-500 hover:scale-105 transform`}
                             style={{ backgroundImage: `url("${img}")` }}
                           ></div>
                         </div>
