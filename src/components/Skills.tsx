@@ -29,10 +29,6 @@ export default function Skills() {
           <h2 className="text-2xl md:text-3xl font-bold text-white tracking-tight mb-2">{messages.skills_title}</h2>
           <p className="text-slate-400 max-w-lg">{messages.skills_description}</p>
         </div>
-        <a className="text-primary text-sm font-bold hover:underline flex items-center gap-1" href="#">
-          {messages.skills_view_full_stack}
-          <span className="material-icons text-sm">arrow_forward</span>
-        </a>
       </div>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 justify-center">
         {skills.map(skill => (
