@@ -5,10 +5,56 @@ import projectsData from '@/../data/allProjects.json'
 import Navigation from '@/components/Navigation'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import { motion, Variants } from 'motion/react'
 
 export default function AllProjects() {
   const [filter] = useState('All')
   const [visibleCount, setVisibleCount] = useState(6)
+
+  const cardVariants: Variants = {
+    hidden: (i: number) => ({
+      filter: 'blur(5px)',
+      opacity: 0,
+      x: i % 2 === 0 ? -60 : 60,
+      y: 80,
+      scale: 1.1,
+    }),
+
+    visible: (i: number) => ({
+      opacity: 1,
+      y: 0,
+      x: 0,
+      scale: 1,
+      filter: 'blur(0px)',
+      transition: {
+        delay: (i % 2) * 0.1,
+        duration: 0.4,
+        ease: 'backOut',
+      },
+    }),
+
+    imgHidden: ({ isLeft }: { isLeft: boolean }) => ({
+      filter: 'blur(5px)',
+      opacity: 0,
+      x: isLeft ? 60 : -60,
+      y: 80,
+      scale: 1.1,
+    }),
+
+    imgVisible: () => {
+      return {
+        opacity: 1,
+        x: 0,
+        y: 0,
+        scale: 1,
+        filter: 'blur(0px)',
+        transition: {
+          duration: 0.4,
+          ease: 'backOut',
+        },
+      }
+    },
+  }
 
   // Filter projects based on the selected category
   const filteredProjects = projectsData.filter(project => {
@@ -40,31 +86,19 @@ export default function AllProjects() {
                 management, custom animations, and cross-platform architecture.
               </p>
             </div>
-            {/* Filters */}
-            {/* <div className="flex gap-3 flex-wrap pb-2">
-              {['All', 'iOS', 'Android', 'Packages'].map(item => (
-                <button
-                  key={item}
-                  onClick={() => setFilter(item)}
-                  className={`flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-lg pl-3 pr-5 transition-all ${
-                    filter === item ? 'bg-primary active:scale-95' : 'bg-surface-border hover:bg-surface-dark'
-                  }`}
-                >
-                  <span className="material-icons text-white text-[20px]">
-                    {item === 'All' ? 'check' : item === 'iOS' ? 'smartphone' : item === 'Android' ? 'android' : 'widgets'}
-                  </span>
-                  <p className="text-white text-sm font-medium leading-normal">{item}</p>
-                </button>
-              ))}
-            </div> */}
           </div>
 
           {/* Projects Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {filteredProjects.slice(0, visibleCount).map((project, index) => (
-              <article
+              <motion.article
                 key={index}
-                className="group relative flex flex-col bg-surface-dark rounded-xl overflow-hidden border border-surface-border hover:border-flutter-blue transition-all duration-300 shadow-lg hover:shadow-flutter-blue/10"
+                custom={index}
+                variants={cardVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, margin: '-200px' }}
+                className="group relative flex flex-col bg-surface-dark rounded-xl overflow-hidden border border-surface-border hover:border-flutter-blue  shadow-lg hover:shadow-flutter-blue/10"
               >
                 <div className="absolute top-4 right-4 z-10 bg-surface-dark/90 backdrop-blur-sm p-1.5 rounded-lg border border-surface-border">
                   <svg
@@ -85,17 +119,26 @@ export default function AllProjects() {
                   <p className="text-text-secondary text-sm leading-relaxed line-clamp-2">{project.description}</p>
                   <div className="grid grid-cols-3 gap-2 my-2">
                     {project.images.map((img, idx) => (
-                      <div
-                        key={idx}
-                        className="relative w-full aspect-9/16 rounded-lg overflow-hidden bg-background-dark border border-surface-border/30"
+                      <motion.div
+                        key={`${img}`}
+                        custom={{ i: idx, isLeft: index % 2 !== 0 }}
+                        variants={cardVariants}
+                        initial="imgHidden"
+                        whileInView="imgVisible"
+                        viewport={{ once: true, margin: '-50px' }}
                       >
                         <div
-                          className={`absolute inset-0 bg-cover bg-center opacity-90 group-hover:opacity-100 transition-opacity duration-500 hover:scale-105 transform ${
-                            idx === 1 ? 'delay-75' : idx === 2 ? 'delay-150' : ''
-                          }`}
-                          style={{ backgroundImage: `url("${img}")` }}
-                        ></div>
-                      </div>
+                          key={idx}
+                          className="relative w-full aspect-9/16 rounded-lg overflow-hidden bg-background-dark border border-surface-border/30"
+                        >
+                          <div
+                            className={`absolute inset-0 bg-cover bg-center opacity-90 group-hover:opacity-100 transition-opacity duration-500 hover:scale-105 transform ${
+                              idx === 1 ? 'delay-75' : idx === 2 ? 'delay-150' : ''
+                            }`}
+                            style={{ backgroundImage: `url("${img}")` }}
+                          ></div>
+                        </div>
+                      </motion.div>
                     ))}
                   </div>
                   <div className="flex flex-col gap-3 mt-auto">
@@ -127,7 +170,7 @@ export default function AllProjects() {
                     </div>
                   </div>
                 </div>
-              </article>
+              </motion.article>
             ))}
           </div>
 
