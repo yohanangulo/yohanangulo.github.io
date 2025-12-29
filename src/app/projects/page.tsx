@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import projectsData from '@/../data/allProjects.json'
+import { allProjects } from '@/../data'
 import Navigation from '@/components/Navigation'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
@@ -57,7 +57,7 @@ export default function AllProjects() {
   }
 
   // Filter projects based on the selected category
-  const filteredProjects = projectsData.filter(project => {
+  const filteredProjects = allProjects.filter(project => {
     if (filter === 'All') return true
     return project.categories.includes(filter)
   })

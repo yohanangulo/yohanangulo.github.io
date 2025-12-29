@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import projects from '@/../data/featuredProjects.json'
+import { featuredProjects as projects } from '@/../data'
 import { Variants } from 'motion'
 import { motion } from 'motion/react'
 
