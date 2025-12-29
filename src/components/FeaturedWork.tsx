@@ -1,9 +1,57 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
 
 import projects from '@/../data/featuredProjects.json'
+import { Variants } from 'motion'
+import { motion } from 'motion/react'
 
 export default function FeaturedWork() {
+  const cardVariants: Variants = {
+    hidden: (i: number) => ({
+      filter: 'blur(5px)',
+      opacity: 0,
+      x: i % 2 === 0 ? -60 : 60,
+      y: 80,
+      scale: 1.2,
+    }),
+
+    visible: (i: number) => ({
+      opacity: 1,
+      y: 0,
+      x: 0,
+      scale: 1,
+      filter: 'blur(0px)',
+      transition: {
+        delay: (i % 2) * 0.1,
+        duration: 0.4,
+        ease: 'backOut',
+      },
+    }),
+
+    imgHidden: ({ isLeft }: { isLeft: boolean }) => ({
+      filter: 'blur(5px)',
+      opacity: 0,
+      x: isLeft ? 60 : -60,
+      y: 80,
+      scale: 1.1,
+    }),
+
+    imgVisible: () => {
+      return {
+        opacity: 1,
+        x: 0,
+        y: 0,
+        scale: 1,
+        filter: 'blur(0px)',
+        transition: {
+          duration: 0.4,
+          ease: 'backOut',
+        },
+      }
+    },
+  }
   const getStatusColor = (color: string) => {
     switch (color) {
       case 'green':
@@ -31,10 +79,15 @@ export default function FeaturedWork() {
       </div>
 
       <div className="flex flex-col gap-12">
-        {projects.map(project => (
-          <article
+        {projects.map((project, index) => (
+          <motion.article
+            custom={index}
+            variants={cardVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: '-200px' }}
             key={project.id}
-            className="group relative flex flex-col md:flex-row gap-8 p-6 md:p-8 rounded-2xl bg-surface-dark border border-border-dark hover:border-primary/40 shadow-sm hover:shadow-xl hover:shadow-primary/5 transition-all duration-300"
+            className="group relative flex flex-col md:flex-row gap-8 p-6 md:p-8 rounded-2xl bg-surface-dark border border-border-dark hover:border-primary/40 shadow-sm hover:shadow-xl hover:shadow-primary/5"
           >
             {/* Content Side */}
             <div className="flex-1 flex flex-col gap-6">
@@ -104,7 +157,14 @@ export default function FeaturedWork() {
             </div>
 
             {/* Visual Side (Mockup) */}
-            <div className="w-full md:w-[320px] shrink-0 flex items-center justify-center bg-black/20 rounded-xl p-8 border border-border-dark overflow-hidden group-hover:bg-black/30 transition-colors">
+            <motion.div
+              className="w-full md:w-[320px] shrink-0 flex items-center justify-center bg-black/20 rounded-xl p-8 border border-border-dark overflow-hidden group-hover:bg-black/30 transition-colors"
+              custom={{ i: index, isLeft: index % 2 !== 0 }}
+              variants={cardVariants}
+              initial="imgHidden"
+              whileInView="imgVisible"
+              viewport={{ once: true, margin: '-150px' }}
+            >
               {/* Phone Frame Simulation */}
               <div className="relative w-[200px] aspect-9/19 rounded-[2.5rem] bg-slate-900 ring-8 ring-slate-800 shadow-2xl group-hover:scale-[1.02] group-hover:-translate-y-2 transition-transform duration-500 ease-out">
                 {/* Notch */}
@@ -138,8 +198,8 @@ export default function FeaturedWork() {
                   {project.id === 2 && <div className="absolute top-0 w-full h-8 bg-black/10 backdrop-blur-[2px]"></div>}
                 </div>
               </div>
-            </div>
-          </article>
+            </motion.div>
+          </motion.article>
         ))}
       </div>
 
