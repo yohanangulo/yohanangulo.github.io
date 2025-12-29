@@ -5,11 +5,12 @@ import { allProjects, messages } from '@/../data'
 import Navigation from '@/components/Navigation'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
-import { motion, Variants } from 'motion/react'
+import { AnimatePresence, motion, Variants } from 'motion/react'
 
 export default function AllProjects() {
   const [filter] = useState('All')
   const [visibleCount, setVisibleCount] = useState(6)
+  const [selectedImage, setSelectedImage] = useState<string | null>(null)
 
   const cardVariants: Variants = {
     hidden: (i: number) => ({
@@ -80,10 +81,10 @@ export default function AllProjects() {
         <div className="flex flex-col max-w-[1200px] flex-1 gap-8">
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-3">
-              <h1 className="text-white text-4xl md:text-5xl font-black leading-tight tracking-[-0.033em]">{messages.projects_title}</h1>
-              <p className="text-text-secondary text-lg font-normal leading-normal max-w-2xl">
-                {messages.projects_description}
-              </p>
+              <h1 className="text-white text-4xl md:text-5xl font-black leading-tight tracking-[-0.033em]">
+                {messages.projects_title}
+              </h1>
+              <p className="text-text-secondary text-lg font-normal leading-normal max-w-2xl">{messages.projects_description}</p>
             </div>
           </div>
 
@@ -125,6 +126,8 @@ export default function AllProjects() {
                         initial="imgHidden"
                         whileInView="imgVisible"
                         viewport={{ once: true, margin: '-50px' }}
+                        onClick={() => setSelectedImage(img)}
+                        className="cursor-pointer"
                       >
                         <div
                           key={idx}
@@ -185,6 +188,43 @@ export default function AllProjects() {
           )}
         </div>
       </div>
+
+      <AnimatePresence>
+        {selectedImage && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setSelectedImage(null)}
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4 backdrop-blur-sm"
+          >
+            <motion.div
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.8, opacity: 0 }}
+              className="relative max-w-7xl max-h-[90vh] w-full h-full flex items-center justify-center"
+              onClick={e => e.stopPropagation()}
+            >
+              <button
+                onClick={() => setSelectedImage(null)}
+                className="absolute top-4 right-4 p-2 text-white/70 hover:text-white bg-black/50 hover:bg-black/70 rounded-full transition-colors z-50 cursor-pointer"
+              >
+                <span className="material-icons text-3xl">close</span>
+              </button>
+              <div
+                className="relative w-full h-full"
+                style={{
+                  backgroundImage: `url("${selectedImage}")`,
+                  backgroundSize: 'contain',
+                  backgroundPosition: 'center',
+                  backgroundRepeat: 'no-repeat',
+                }}
+              />
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       <Footer />
     </main>
   )
