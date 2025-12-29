@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { allProjects } from '@/../data'
+import { allProjects, messages } from '@/../data'
 import Navigation from '@/components/Navigation'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
@@ -71,7 +71,7 @@ export default function AllProjects() {
     <main>
       <Navigation>
         <Link className="text-slate-300 hover:text-white text-sm font-medium transition-colors" href="/#work">
-          Work
+          {messages.nav_link_work}
         </Link>
       </Navigation>
 
@@ -80,10 +80,9 @@ export default function AllProjects() {
         <div className="flex flex-col max-w-[1200px] flex-1 gap-8">
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-3">
-              <h1 className="text-white text-4xl md:text-5xl font-black leading-tight tracking-[-0.033em]">All Projects</h1>
+              <h1 className="text-white text-4xl md:text-5xl font-black leading-tight tracking-[-0.033em]">{messages.projects_title}</h1>
               <p className="text-text-secondary text-lg font-normal leading-normal max-w-2xl">
-                A curated collection of high-performance mobile applications built with Flutter. Exploring advanced state
-                management, custom animations, and cross-platform architecture.
+                {messages.projects_description}
               </p>
             </div>
           </div>
@@ -156,14 +155,14 @@ export default function AllProjects() {
                         href="#"
                       >
                         <span className="material-icons text-[18px]">code</span>
-                        View Code
+                        {messages.projects_view_code}
                       </a>
                       <a
                         className="flex flex-1 items-center justify-center gap-2 py-2 rounded-lg bg-flutter-blue hover:bg-flutter-blue/90 text-background-dark text-sm font-bold transition-colors"
                         href="#"
                       >
                         <span className="material-icons text-[18px]">play_arrow</span>
-                        Live Demo
+                        {messages.projects_live_demo}
                       </a>
                     </div>
                   </div>
@@ -179,7 +178,7 @@ export default function AllProjects() {
                 onClick={handleLoadMore}
                 className="flex items-center gap-2 px-6 py-3 bg-surface-border hover:bg-surface-dark text-white rounded-lg transition-colors font-medium text-sm cursor-pointer"
               >
-                <span>Load More Projects</span>
+                <span>{messages.projects_load_more}</span>
                 <span className="material-icons text-sm">expand_more</span>
               </button>
             </div>

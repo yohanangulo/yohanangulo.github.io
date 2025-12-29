@@ -2,6 +2,7 @@
 
 import { legacyAnimations } from '@/utils/legacy-animations'
 import { motion } from 'motion/react'
+import { messages } from '../../data'
 
 const skills = [
   { icon: 'phone_android', name: 'Flutter' },
@@ -25,11 +26,11 @@ export default function Skills() {
     >
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
         <div>
-          <h2 className="text-2xl md:text-3xl font-bold text-white tracking-tight mb-2">Technical Expertise</h2>
-          <p className="text-slate-400 max-w-lg">Core technologies and tools I use to build scalable mobile applications.</p>
+          <h2 className="text-2xl md:text-3xl font-bold text-white tracking-tight mb-2">{messages.skills_title}</h2>
+          <p className="text-slate-400 max-w-lg">{messages.skills_description}</p>
         </div>
         <a className="text-primary text-sm font-bold hover:underline flex items-center gap-1" href="#">
-          View full tech stack
+          {messages.skills_view_full_stack}
           <span className="material-icons text-sm">arrow_forward</span>
         </a>
       </div>

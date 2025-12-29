@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { featuredProjects as projects } from '@/../data'
+import { featuredProjects as projects, messages } from '@/../data'
 import { Variants } from 'motion'
 import { motion } from 'motion/react'
 
@@ -68,11 +68,10 @@ export default function FeaturedWork() {
       <div className="space-y-6 mb-12">
         <div className="flex flex-col gap-4 max-w-3xl">
           <h2 className="text-4xl md:text-5xl font-black tracking-tight leading-[1.1] text-white">
-            Featured <span className="text-primary">Work</span>
+            {messages.featured_work_title_prefix}<span className="text-primary">{messages.featured_work_title_suffix}</span>
           </h2>
           <p className="text-lg md:text-xl text-slate-400 leading-relaxed">
-            Engineering seamless mobile experiences with Flutter. Focused on high-performance architectures, complex state
-            management, and scalable design systems.
+            {messages.featured_work_description}
           </p>
         </div>
         <div className="h-px w-full bg-linear-to-r from-border-dark/50 to-transparent"></div>
@@ -210,7 +209,7 @@ export default function FeaturedWork() {
           href="/projects"
         >
           <span className="material-icons">hub</span>
-          View All Projects
+          {messages.featured_work_view_all}
         </Link>
       </div>
     </section>

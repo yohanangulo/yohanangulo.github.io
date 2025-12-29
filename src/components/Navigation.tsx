@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { ReactNode } from 'react'
+import { messages } from '../../data'
 
 type NavigationProps = {
   children: ReactNode
@@ -15,20 +16,20 @@ export default function Navigation({ children }: NavigationProps) {
               <span className="material-icons text-[20px]">terminal</span>
             </div>
             <div>
-              <h1 className="text-white text-sm font-bold leading-none tracking-tight">John Doe</h1>
-              <span className="text-slate-400 text-xs font-medium">Senior Flutter Engineer</span>
+              <h1 className="text-white text-sm font-bold leading-none tracking-tight">{messages.nav_name}</h1>
+              <span className="text-slate-400 text-xs font-medium">{messages.nav_role}</span>
             </div>
           </Link>
           <div className="hidden md:flex items-center gap-8">
             {children}
             <Link className="text-slate-300 hover:text-white text-sm font-medium transition-colors" href="/#skills">
-              Skills
+              {messages.nav_link_skills}
             </Link>
             <Link className="text-slate-300 hover:text-white text-sm font-medium transition-colors" href="/#about">
-              About
+              {messages.nav_link_about}
             </Link>
             <button className="cursor-pointer flex items-center justify-center gap-2 h-9 px-4 bg-primary hover:bg-primary/90 text-white text-sm font-bold rounded-lg transition-all shadow-[0_0_15px_rgba(43,140,238,0.3)] hover:shadow-[0_0_20px_rgba(43,140,238,0.5)]">
-              <span className="capitalize">resume</span>
+              <span className="capitalize">{messages.nav_button_resume}</span>
             </button>
           </div>
           <button className="md:hidden text-slate-300 hover:text-white">
