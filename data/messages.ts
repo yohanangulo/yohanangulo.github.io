@@ -1,4 +1,5 @@
 export const messages = {
+  // Hero
   hero_available_for_new_roles: 'Available for new roles',
   hero_translate_requirements:
     'I translate complex requirements into scalable, high-performance Flutter applications. Specialized in clean architecture, advanced state management, and pixel-perfect interactions.',
