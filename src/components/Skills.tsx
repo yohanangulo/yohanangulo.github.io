@@ -1,3 +1,8 @@
+'use client'
+
+import { legacyAnimations } from '@/utils/legacy-animations'
+import { motion } from 'motion/react'
+
 const skills = [
   { icon: 'phone_android', name: 'Flutter' },
   { icon: 'code', name: 'Dart' },
@@ -13,7 +18,8 @@ const skills = [
 
 export default function Skills() {
   return (
-    <section
+    <motion.section
+      {...legacyAnimations.fadeInAnimation}
       className="w-full max-w-7xl px-4 sm:px-6 lg:px-8 py-16 md:py-24 scroll-mt-20 border-b border-border-dark/30 mx-auto"
       id="skills"
     >
@@ -38,6 +44,6 @@ export default function Skills() {
           </div>
         ))}
       </div>
-    </section>
+    </motion.section>
   )
 }
