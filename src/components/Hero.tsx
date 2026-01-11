@@ -60,10 +60,13 @@ export default function Hero() {
               </div>
             </div>
             <div className="flex flex-wrap gap-4 w-full sm:w-auto mt-2">
-              <button className="flex-1 sm:flex-none h-12 px-8 bg-white text-background-dark hover:bg-slate-200 text-sm font-bold rounded-lg transition-colors flex items-center justify-center gap-2">
+              <a
+                href="#work"
+                className="flex-1 sm:flex-none h-12 px-8 bg-white text-background-dark hover:bg-slate-200 text-sm font-bold rounded-lg transition-colors flex items-center justify-center gap-2 cursor-pointer"
+              >
                 {messages.hero_view_mob_projects}
                 <span className="material-icons text-[18px]">keyboard_arrow_down</span>
-              </button>
+              </a>
               <button className="flex-1 sm:flex-none h-12 px-8 border border-white/10 bg-white/5 hover:bg-white/10 text-white text-sm font-bold rounded-lg transition-all flex items-center justify-center gap-2 backdrop-blur-sm group">
                 {messages.hero_download_cv}
                 <span className="material-icons text-[18px] text-slate-400 group-hover:text-white transition-colors">

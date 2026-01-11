@@ -1,12 +1,47 @@
 [
   {
     "id": 1,
+    "title": "Kairos",
+    "status": {
+      "text": "Live on Store",
+      "color": "green"
+    },
+    "description": "A personal journaling and mindfulness app featuring AI-driven insights and multi-modal entries (audio, text, image). Implements a robust offline-first sync engine using Isar and Firestore for seamless dat persistence.",
+    "metrics": [
+      {
+        "icon": "sync_alt",
+        "label": "State Management",
+        "value": "Riverpod"
+      },
+      {
+        "icon": "architecture",
+        "label": "Architecture",
+        "value": "Clean (Feature-First)"
+      }
+    ],
+    "techStack": ["Flutter", "Riverpod", "Firebase", "Isar", "Clean Arch"],
+    "actions": [
+      {
+        "icon": "smartphone",
+        "label": "View App",
+        "type": "primary"
+      },
+      {
+        "icon": "code",
+        "label": "Source Code",
+        "type": "secondary"
+      }
+    ],
+    "image": ""
+  },
+  {
+    "id": 1,
     "title": "Context First",
     "status": { "text": "Live on Store", "color": "green" },
     "description": "A high-frequency trading dashboard designed for rapid financial decision making. Solved complex state synchronization challenges using Bloc and WebSockets for real-time ticker updates.",
     "metrics": [
-      { "icon": "payments", "label": "Volume", "value": "$2M+ / mo" },
-      { "icon": "bolt", "label": "Latency", "value": "< 50ms" }
+      { "icon": "sync_alt", "label": "State Management", "value": "Complex (Bloc)" },
+      { "icon": "architecture", "label": "Architecture", "value": "Clean, Scalable" }
     ],
     "techStack": ["Flutter", "Bloc", "GraphQL", "Clean Arch"],
     "actions": [

@@ -12,7 +12,7 @@ export const messages = {
   hero_architecture: 'Architecture',
   hero_performance: 'Performance',
   hero_uiux: 'UX/UI',
-  hero_view_mob_projects: 'View Mobile Projects',
+  hero_view_mob_projects: 'View Projects',
   hero_download_cv: 'Download Resume',
   hero_deployment: 'Deployment',
   hero_production_ready: 'Production Ready',
@@ -60,4 +60,7 @@ export const messages = {
   footer_linkedin: 'LinkedIn',
   footer_github: 'GitHub',
   footer_copyright: '© 2025 Makers AI. Built with modern web technologies',
+
+  // UI Elements
+  scroll_to_top: 'Scroll to top',
 }
