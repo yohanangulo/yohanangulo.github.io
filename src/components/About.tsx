@@ -17,9 +17,7 @@ export default function About() {
       <motion.div {...legacyAnimations.fadeInAnimation} className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <span className="text-primary font-bold text-sm tracking-widest uppercase mb-4 block">{messages.about_me_title}</span>
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">{messages.about_heading}</h2>
-        <p className="text-lg text-slate-400 leading-relaxed mb-10">
-          {messages.about_description}
-        </p>
+        <p className="text-lg text-slate-400 leading-relaxed mb-10">{messages.about_description}</p>
         <div className="flex flex-wrap justify-center gap-6">
           {features.map(feature => (
             <div key={feature.name} className="flex flex-col items-center gap-2 p-4 min-w-[140px]">
