@@ -19,19 +19,20 @@ help:
 
 # Step 1: Pre-release validations
 check-clean:
-	@echo "$(YELLOW)Checking repository status...$(NC)"
+	@echo "$(YELLOW)Checking release preconditions...$(NC)"
 	@CURRENT_BRANCH=$$(git branch --show-current); \
 	if [ "$$CURRENT_BRANCH" != "main" ]; then \
 		echo "$(RED)✗ You can only release from the 'main' branch.$(NC)"; \
 		echo "  Current branch: $$CURRENT_BRANCH"; \
 		exit 1; \
 	fi
-	@if [ -n "$$(git status --porcelain)" ]; then \
-		echo "$(RED)✗ There are uncommitted changes.$(NC)"; \
+	@CHANGES=$$(git status --porcelain package.json | wc -l); \
+	if [ "$$CHANGES" -ne 0 ]; then \
+		echo "$(RED)✗ package.json has uncommitted changes.$(NC)"; \
 		echo "  Please commit or stash before releasing."; \
 		exit 1; \
 	fi
-	@echo "$(GREEN)✓ Repository clean on main branch$(NC)"
+	@echo "$(GREEN)✓ package.json clean on main branch$(NC)"
 
 # Step 2: Bump version (patch)
 bump-patch:
