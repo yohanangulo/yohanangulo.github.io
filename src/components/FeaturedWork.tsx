@@ -167,7 +167,7 @@ export default function FeaturedWork() {
               <div className="relative w-[200px] aspect-9/19 rounded-[2.5rem] bg-slate-900 ring-8 ring-slate-800 shadow-2xl group-hover:scale-[1.02] group-hover:-translate-y-2 transition-transform duration-500 ease-out">
                 {/* Notch */}
                 <div
-                  className={`absolute top-0 left-1/2 -translate-x-1/2 h-[18px] w-[80px] bg-black rounded-b-xl z-20 ${
+                  className={`absolute top-0 left-1/2 -translate-x-1/2 h-4.5 w-20 bg-black rounded-b-xl z-20 ${
                     project.id === 2 ? 'hidden' : ''
                   }`}
                 ></div>
