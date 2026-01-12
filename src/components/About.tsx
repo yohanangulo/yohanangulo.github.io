@@ -20,7 +20,7 @@ export default function About() {
         <p className="text-lg text-slate-400 leading-relaxed mb-10">{messages.about_description}</p>
         <div className="flex flex-wrap justify-center gap-6">
           {features.map(feature => (
-            <div key={feature.name} className="flex flex-col items-center gap-2 p-4 min-w-[140px]">
+            <div key={feature.name} className="flex flex-col items-center gap-2 p-4 min-w-35">
               <div className="size-12 rounded-full bg-surface-dark border border-border-dark flex items-center justify-center text-white">
                 <span className="material-icons">{feature.icon}</span>
               </div>

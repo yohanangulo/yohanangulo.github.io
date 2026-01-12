@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section className="relative w-full overflow-hidden pt-20 pb-20 lg:pt-32 lg:pb-32 border-b border-white/5 bg-[#0b1117]">
       <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-size-[24px_24px] mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)"></div>
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-primary/10 rounded-full blur-[120px] -z-10 pointer-events-none"></div>
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-200 h-75 bg-primary/10 rounded-full blur-[120px] -z-10 pointer-events-none"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="flex flex-col items-start text-left gap-8 z-10">
@@ -75,10 +75,10 @@ export default function Hero() {
               </button>
             </div>
           </div>
-          <div className="relative h-[600px] w-full hidden lg:flex items-center justify-center perspective-1000 group select-none">
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-indigo-500/10 rounded-full blur-[80px] pointer-events-none group-hover:bg-indigo-500/20 transition-colors duration-1000"></div>
-            <div className="relative w-[320px] h-[640px] transform-style-3d transition-transform duration-700 ease-out group-hover:rotate-y-[-10deg] group-hover:rotate-x-[5deg]">
-              <div className="absolute inset-0 bg-[#0F1620] border border-white/10 rounded-[3rem] p-6 shadow-2xl transition-all duration-700 ease-out group-hover:translate-x-[-140px] group-hover:translate-z-[-60px] group-hover:rotate-y-15 group-hover:scale-90 group-hover:opacity-100 flex flex-col gap-4 phone-frame-1">
+          <div className="relative h-150 w-full hidden lg:flex items-center justify-center perspective-1000 group select-none">
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-125 h-125 bg-indigo-500/10 rounded-full blur-[80px] pointer-events-none group-hover:bg-indigo-500/20 transition-colors duration-1000"></div>
+            <div className="relative w-[320px] h-160 transform-style-3d transition-transform duration-700 ease-out group-hover:rotate-y-[-10deg] group-hover:rotate-x-[5deg]">
+              <div className="absolute inset-0 bg-[#0F1620] border border-white/10 rounded-[3rem] p-6 shadow-2xl transition-all duration-700 ease-out group-hover:-translate-x-35 group-hover:-translate-z-15 group-hover:rotate-y-15 group-hover:scale-90 group-hover:opacity-100 flex flex-col gap-4 phone-frame-1">
                 <div className="flex justify-center mb-4">
                   <div className="w-16 h-1 bg-white/10 rounded-full"></div>
                 </div>
@@ -95,7 +95,7 @@ export default function Hero() {
                   Wireframe // Blueprint
                 </div>
               </div>
-              <div className="absolute inset-0 bg-[#1e1e1e] border border-white/10 rounded-[3rem] p-5 shadow-2xl transition-all duration-700 ease-out group-hover:translate-x-[-70px] group-hover:translate-z-[-30px] group-hover:rotate-y-[8deg] group-hover:scale-95 group-hover:opacity-100 overflow-hidden phone-frame-2">
+              <div className="absolute inset-0 bg-[#1e1e1e] border border-white/10 rounded-[3rem] p-5 shadow-2xl transition-all duration-700 ease-out group-hover:-translate-x-17.5 group-hover:-translate-z-7.5 group-hover:rotate-y-[8deg] group-hover:scale-95 group-hover:opacity-100 overflow-hidden phone-frame-2">
                 <div className="flex items-center gap-1.5 mb-4 px-1">
                   <div className="w-2.5 h-2.5 rounded-full bg-red-500/50"></div>
                   <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/50"></div>
