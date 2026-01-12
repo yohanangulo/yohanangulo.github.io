@@ -68,11 +68,10 @@ export default function FeaturedWork() {
       <div className="space-y-6 mb-12">
         <div className="flex flex-col gap-4 max-w-3xl">
           <h2 className="text-4xl md:text-5xl font-black tracking-tight leading-[1.1] text-white">
-            {messages.featured_work_title_prefix}<span className="text-primary">{messages.featured_work_title_suffix}</span>
+            {messages.featured_work_title_prefix}
+            <span className="text-primary">{messages.featured_work_title_suffix}</span>
           </h2>
-          <p className="text-lg md:text-xl text-slate-400 leading-relaxed">
-            {messages.featured_work_description}
-          </p>
+          <p className="text-lg md:text-xl text-slate-400 leading-relaxed">{messages.featured_work_description}</p>
         </div>
         <div className="h-px w-full bg-linear-to-r from-border-dark/50 to-transparent"></div>
       </div>
@@ -85,7 +84,7 @@ export default function FeaturedWork() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: '-200px' }}
-            key={project.id}
+            key={`project-${index}`}
             className="group relative flex flex-col md:flex-row gap-8 p-6 md:p-8 rounded-2xl bg-surface-dark border border-border-dark hover:border-primary/40 shadow-sm hover:shadow-xl hover:shadow-primary/5"
           >
             {/* Content Side */}
