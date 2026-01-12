@@ -177,7 +177,7 @@ export default function FeaturedWork() {
                 )}
                 {/* Screen */}
                 <div
-                  className={`absolute inset-[2px] rounded-[2.3rem] overflow-hidden ${
+                  className={`absolute inset-0.5 rounded-[2.3rem] overflow-hidden ${
                     project.id === 2 ? 'bg-white' : project.id === 3 ? 'bg-[#e5e5e5]' : 'bg-[#0d131a]'
                   }`}
                 >
