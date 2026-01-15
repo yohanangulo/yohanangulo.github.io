@@ -1,13 +1,13 @@
 export const messages = {
   // Hero
-  hero_available_for_new_roles: 'Available for new projects',
+  hero_available_for_new_roles: 'Available for new challenges',
   hero_translate_requirements:
-    'We translate complex requirements into scalable, high-performance Flutter applications. Specialized in clean architecture, advanced state management, and pixel-perfect interactions.',
+    'Building performant mobile apps with Flutter. With 4+ years of Flutter experience and 8 years in software development, I focus on creating incredible user experiences with clean, maintainable code.',
   hero_mobile_excellence: 'Mobile Excellence',
-  hero_years_experience_num: '+6',
+  hero_years_experience_num: '+4',
   hero_years_exp: 'Years Exp.',
-  hero_active_users_count: '100k+',
-  hero_active_users: 'Active Users',
+  hero_active_users_count: '8+',
+  hero_active_users: 'Years in Tech',
   hero_key_strengths: 'Key Strengths',
   hero_architecture: 'Architecture',
   hero_performance: 'Performance',
@@ -18,32 +18,32 @@ export const messages = {
   hero_production_ready: 'Production Ready',
 
   // Navigation
-  nav_name: 'Makers AI',
-  nav_role: 'Flutter Engineers',
+  nav_name: 'Yohan Angulo',
+  nav_role: 'Senior Flutter Developer',
   nav_link_skills: 'Skills',
   nav_link_about: 'About',
   nav_link_work: 'Projects',
   nav_button_resume: 'Resume',
 
   // About
-  about_me_title: 'About Us',
+  about_me_title: 'About Me',
   about_heading: 'More than just code',
   about_description:
-    'We don’t just write Dart — we build products. With over 6 years of combined experience in mobile development, we bridge the gap between complex engineering challenges and seamless user experiences. We specialize in optimizing app performance, reducing build sizes, and setting up scalable CI/CD workflows for production-ready Flutter applications.',
+    "I don't just write code — I solve problems. With 8 years in tech and 4+ years dedicated to Flutter, I've learned that great apps come from understanding both the technical challenges and the end user's needs. I focus on writing clean, maintainable code that performs well and scales as your product grows.",
   about_feature_performance: 'Performance',
   about_feature_responsive: 'Responsive',
   about_feature_clean_arch: 'Clean Arch',
 
   // Skills
   skills_title: 'Technical Expertise',
-  skills_description: 'Core technologies and tools we use to build scalable mobile applications.',
+  skills_description: 'Core technologies and tools I use to build scalable mobile applications.',
   skills_view_full_stack: 'View Full Tech Stack',
 
   // Featured Work
   featured_work_title_prefix: 'Featured ',
   featured_work_title_suffix: 'Work',
   featured_work_description:
-    'Engineering seamless mobile experiences with Flutter. Focused on high-performance architectures, advanced state management, and scalable design systems.',
+    'Engineering mobile experiences with Flutter. Focused on high-performance architectures, advanced state management, and scalable design systems.',
   featured_work_view_all: 'View All Projects',
 
   // Projects Page
@@ -55,11 +55,13 @@ export const messages = {
   projects_load_more: 'Load More Projects',
 
   // Footer
-  footer_name: 'Makers AI',
-  footer_role_location: 'Flutter Engineers building production-ready mobile apps.',
+  footer_name: 'Yohan Angulo',
+  footer_role_location: 'Senior Flutter Developer',
   footer_linkedin: 'LinkedIn',
+  footer_linkedin_url: 'https://www.linkedin.com/in/yohan-angulo',
   footer_github: 'GitHub',
-  footer_copyright: '© 2025 Makers AI. Built with modern web technologies',
+  footer_github_url: 'https://github.com/yohanangulo',
+  footer_copyright: (year: number) => `© ${year} Yohan Angulo. Built with modern web technologies`,
 
   // UI Elements
   scroll_to_top: 'Scroll to top',

@@ -65,14 +65,8 @@ export default function Hero() {
                 className="flex-1 sm:flex-none h-12 px-8 bg-white text-background-dark hover:bg-slate-200 text-sm font-bold rounded-lg transition-colors flex items-center justify-center gap-2 cursor-pointer"
               >
                 {messages.hero_view_mob_projects}
-                <span className="material-icons text-[18px]">keyboard_arrow_down</span>
+                <span className="material-icons text-[18px]! animate-bounce">keyboard_double_arrow_down</span>
               </a>
-              <button className="flex-1 sm:flex-none h-12 px-8 border border-white/10 bg-white/5 hover:bg-white/10 text-white text-sm font-bold rounded-lg transition-all flex items-center justify-center gap-2 backdrop-blur-sm group">
-                {messages.hero_download_cv}
-                <span className="material-icons text-[18px] text-slate-400 group-hover:text-white transition-colors">
-                  download
-                </span>
-              </button>
             </div>
           </div>
           <div className="relative h-150 w-full hidden lg:flex items-center justify-center perspective-1000 group select-none">
@@ -157,8 +151,11 @@ export default function Hero() {
                   <div className="absolute inset-0 bg-linear-to-t from-background-dark/90 via-transparent to-transparent"></div>
                   <div className="absolute bottom-8 left-1/2 -translate-x-1/2 w-[90%] p-3 bg-[#0b1117]/80 backdrop-blur-md border border-white/10 rounded-xl flex items-center justify-between shadow-lg">
                     <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-green-500/10 flex items-center justify-center text-green-400 border border-green-500/20">
-                        <span className="material-icons text-lg">verified</span>
+                      <div className="relative">
+                        <div className="w-10 h-10 rounded-full bg-green-500/10 flex items-center justify-center text-green-400 border border-green-500/20 absolute animate-ping"></div>
+                        <div className="w-10 h-10 rounded-full bg-green-500/10 flex items-center justify-center text-green-400 border border-green-500/20">
+                          <span className="material-icons text-lg">verified</span>
+                        </div>
                       </div>
                       <div>
                         <div className="text-[10px] text-slate-400 font-medium uppercase tracking-wider">
