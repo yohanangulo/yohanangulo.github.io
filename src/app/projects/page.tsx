@@ -116,6 +116,34 @@ export default function AllProjects() {
                       {project.title}
                     </h3>
                   </div>
+                  {/* Authors */}
+                  {project.authors && project.authors.length > 0 && (
+                    <div className="flex items-center gap-2 -mt-2">
+                      <span className="text-[11px] text-text-secondary">with</span>
+                      <div className="flex flex-wrap gap-1">
+                        {project.authors.map((author: { name: string; url?: string }, idx: number) =>
+                          author.url ? (
+                            <a
+                              key={idx}
+                              href={author.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-full bg-surface-border/40 text-[10px] text-text-secondary hover:text-flutter-blue transition-colors"
+                            >
+                              {author.name}
+                            </a>
+                          ) : (
+                            <span
+                              key={idx}
+                              className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-full bg-surface-border/40 text-[10px] text-text-secondary"
+                            >
+                              {author.name}
+                            </span>
+                          ),
+                        )}
+                      </div>
+                    </div>
+                  )}
                   <p className="text-text-secondary text-sm leading-relaxed line-clamp-2">{project.description}</p>
                   <div className="grid grid-cols-3 gap-2 my-2">
                     {project.images.map((img, idx) => (

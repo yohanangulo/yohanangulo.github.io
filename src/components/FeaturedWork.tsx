@@ -7,6 +7,8 @@ import { featuredProjects as projects, messages } from '@/../data'
 import { Variants } from 'motion'
 import { motion } from 'motion/react'
 
+type Author = { name: string; url?: string }
+
 export default function FeaturedWork() {
   const cardVariants: Variants = {
     hidden: (i: number) => ({
@@ -102,6 +104,36 @@ export default function FeaturedWork() {
                     </span>
                   )}
                 </div>
+                {/* Authors */}
+                {'authors' in project && (project.authors as Author[]).length > 0 && (
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs text-slate-500">with</span>
+                    <div className="flex flex-wrap gap-1.5">
+                      {(project.authors as Author[]).map((author, idx) =>
+                        author.url ? (
+                          <a
+                            key={idx}
+                            href={author.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-slate-800/50 text-xs text-slate-300 hover:text-primary hover:bg-slate-800 transition-colors"
+                          >
+                            <span className="material-icons text-[12px]">person</span>
+                            {author.name}
+                          </a>
+                        ) : (
+                          <span
+                            key={idx}
+                            className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-slate-800/50 text-xs text-slate-400"
+                          >
+                            <span className="material-icons text-[12px]">person</span>
+                            {author.name}
+                          </span>
+                        ),
+                      )}
+                    </div>
+                  </div>
+                )}
                 <p className="text-base text-slate-400 leading-relaxed">{project.description}</p>
               </div>
 

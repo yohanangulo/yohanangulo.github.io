@@ -2,6 +2,12 @@
   {
     "id": 1,
     "title": "Kairos",
+    "authors": [
+      {
+        "name": "Yohan Angulo",
+        "url": "https://github.com/yohanangulo"
+      }
+    ],
     "status": {
       "text": "Live on Store",
       "color": "green"
@@ -37,6 +43,7 @@
   {
     "id": 1,
     "title": "Context First",
+    "authors": [],
     "status": { "text": "Live on Store", "color": "green" },
     "description": "A high-frequency trading dashboard designed for rapid financial decision making. Solved complex state synchronization challenges using Bloc and WebSockets for real-time ticker updates.",
     "metrics": [
@@ -53,6 +60,7 @@
   {
     "id": 2,
     "title": "ShopScale",
+    "authors": [],
     "status": { "text": "Scaling Phase", "color": "blue" },
     "description": "A white-label e-commerce solution focused on smooth list virtualization and image optimization. Implemented custom caching strategies to handle large product catalogs.",
     "metrics": [
@@ -69,6 +77,7 @@
   {
     "id": 3,
     "title": "Connect",
+    "authors": [],
     "description": "Real-time messaging architecture supporting complex media attachments and voice notes. Built with a custom WebSocket implementation and offline-first database syncing.",
     "metrics": [
       { "icon": "hub", "label": "Concurrency", "value": "500+ Active" },
