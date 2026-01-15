@@ -36,7 +36,9 @@ export default function Skills() {
             key={skill.name}
             className="flex items-center gap-3 p-4 rounded-lg border border-border-dark bg-surface-dark hover:border-primary/50 hover:bg-surface-dark/80 transition-all group cursor-default"
           >
-            <span className="material-icons text-slate-400 group-hover:text-primary transition-colors">{skill.icon}</span>
+            <span className="material-icons text-slate-400 group-hover:text-primary transition-colors">
+              {skill.icon}
+            </span>
             <span className="text-sm font-bold text-white">{skill.name}</span>
           </div>
         ))}

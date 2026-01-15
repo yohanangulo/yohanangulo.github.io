@@ -35,8 +35,7 @@ export const allProjects: Project[] = [
   {
     title: 'AeroTravel Booking',
     authors: [],
-    description:
-      'Dynamic flight booking system with hero animations, complex transitions, and sliver scroll effects.',
+    description: 'Dynamic flight booking system with hero animations, complex transitions, and sliver scroll effects.',
     images: [
       'https://lh3.googleusercontent.com/aida-public/AB6AXuD1xDEjuUExNqzY71aDCU7-JMEroFbuFiOJk1J46cpjPUdyevW6pYQkmXJc2gM4c5eT-eseDES1P4xjIE2lzGwBNaG8NWH4ej_-Wbiv8azsoxj0HaHoa-4i7Uy-h5Iy6tdVa8jQr-LnMLn2Wzi-PgiR3Qlg7REOYyXiJ2H5XVICh5BuMHjhBD9KZ-pGXWOfUI-oS5T4ib0VqdtEhyU63RY8Ah-616nF5KfrYWIghdnHK05heiagFi930dxzeytJ4RpOzTpgUiMfR2k',
       'https://lh3.googleusercontent.com/aida-public/AB6AXuBKZ7D6eJa2rdh24Io3F6EjSVxcKzR28BeIRHCDS_j8TqJZZklIVS1tGOh26rqUr5F83QXvokpxqTQZAcf_kPreGqAkNd983JwnqO5fU0sqNq_KEGwnkZaVQ0HHPWxdcxKB_9RiHtedbdMph-IW1_3KntHPUO45NCpClA_R4R2xBBVCm0mvo-vcW6U9VqvsA3pHlm6ZgxRNUhs9lr01y7igSjNVi9nka277vxQTisr85iuTANH3yDk-y3iTsJNWTok60e0ntqw0Oco',
@@ -48,8 +47,7 @@ export const allProjects: Project[] = [
   {
     title: 'ShopFlow Mobile',
     authors: [],
-    description:
-      'Cross-platform e-commerce solution focusing on smooth UI/UX, integrated payments, and deep linking.',
+    description: 'Cross-platform e-commerce solution focusing on smooth UI/UX, integrated payments, and deep linking.',
     images: [
       'https://lh3.googleusercontent.com/aida-public/AB6AXuBwGdRQivGTOXV1tWTRt6Hytm9OUbTtZtAAvL-wtslN_48AdES9WHJGPiJR2CnExMA7TpHyIwVQC526p4IBTrfXgDucsXn1sBMRDZ6RnM1nnx0-tJNSI-rfdp5b7QgL2SCePnvlV9X9hnx801DxF0XEwEEsTNL9P3gFaV9MoEIdLveLfinRtYdgTKBL-7CLoOoLvD8WQ0nz3z9txcVy2EWVOavCs-YLSZMXqpA4XgaBG1nmiadKSWUx-M31vX3l9N3DcfrTz-D7P4c',
       'https://lh3.googleusercontent.com/aida-public/AB6AXuBcp-0V9JmRBR7XDernIBHPDEDjuv6gWeSnMhGSOGHrd3oZpOJCsXOxeaRgBhgTDSJsbTB1udHwq_WUjdIS16peRdzXywgkk_9pkQvxCExDVVy-exd7U_neAksOFoW9dLqhWdnIgQRM9NZoRCSBiDhWmNK2Cs1WthDN4tNd5t9_e3WEB7EC1xjJfLsckchuGVpaLk0UKopz5JC1lC_RdoqKkvDrj05J-m_hssbPSJe_GxH0Cdz5d_S9abmWlU8AFW_gD8yZAWIpPLs',
@@ -74,8 +72,7 @@ export const allProjects: Project[] = [
   {
     title: 'CryptoWallet X',
     authors: [],
-    description:
-      'Secure, non-custodial wallet with real-time websocket updates and biometric authentication.',
+    description: 'Secure, non-custodial wallet with real-time websocket updates and biometric authentication.',
     images: [
       'https://lh3.googleusercontent.com/aida-public/AB6AXuCYieosSjwoLJjC1WWH7GMtfQNx-OZSErJ1T5tFmkc7TA76mXjUpOdGAm5nIS0UMwCSauz_0b6nYQ0ltVLWk5pYxkuCiArfCXNUldrwIdivcmiIRy9f7StsRPI_ZIlguRiXhtrSV5BaTrNnzefBnLH8X80Pkx5iQshyxfup1THEdI33EMLO4K66tIK9jI0oXEwtbc41YG3JXGmbI-CLb__DFzWaN46FLdV9OARbyjID2UXoqvbWbIWrVDbYy16pKUr7jskbX1F7zRQ',
       'https://lh3.googleusercontent.com/aida-public/AB6AXuAaB-3RH1_XogKHseFzazRO7EVpnm0o8_dIU85WjLt2EP2QnNe7n4WUWz0q4IP4CTVXBkLR58wThPqtTjCCioZYMiEqN1kKZwIECeLs5Uz14W4eHO80BMQtunrwd45-7UZCpI8y0OzfOTZl6Zk-R-I9GpD10JSSU6NdjjMuRYjoLUEy37F9WepqDSP4moKIowpoFhYm5ooDpe7Q-zu3BHTooV6IDXUf4Ob9KW22Ngo9sAFmI3RJ-faKA9keRz1gK5WAviaLNVdfg1k',
@@ -87,8 +84,7 @@ export const allProjects: Project[] = [
   {
     title: 'CryptoWallet X',
     authors: [],
-    description:
-      'Secure, non-custodial wallet with real-time websocket updates and biometric authentication.',
+    description: 'Secure, non-custodial wallet with real-time websocket updates and biometric authentication.',
     images: [
       'https://lh3.googleusercontent.com/aida-public/AB6AXuCYieosSjwoLJjC1WWH7GMtfQNx-OZSErJ1T5tFmkc7TA76mXjUpOdGAm5nIS0UMwCSauz_0b6nYQ0ltVLWk5pYxkuCiArfCXNUldrwIdivcmiIRy9f7StsRPI_ZIlguRiXhtrSV5BaTrNnzefBnLH8X80Pkx5iQshyxfup1THEdI33EMLO4K66tIK9jI0oXEwtbc41YG3JXGmbI-CLb__DFzWaN46FLdV9OARbyjID2UXoqvbWbIWrVDbYy16pKUr7jskbX1F7zRQ',
       'https://lh3.googleusercontent.com/aida-public/AB6AXuAaB-3RH1_XogKHseFzazRO7EVpnm0o8_dIU85WjLt2EP2QnNe7n4WUWz0q4IP4CTVXBkLR58wThPqtTjCCioZYMiEqN1kKZwIECeLs5Uz14W4eHO80BMQtunrwd45-7UZCpI8y0OzfOTZl6Zk-R-I9GpD10JSSU6NdjjMuRYjoLUEy37F9WepqDSP4moKIowpoFhYm5ooDpe7Q-zu3BHTooV6IDXUf4Ob9KW22Ngo9sAFmI3RJ-faKA9keRz1gK5WAviaLNVdfg1k',
@@ -100,8 +96,7 @@ export const allProjects: Project[] = [
   {
     title: 'CryptoWallet X',
     authors: [],
-    description:
-      'Secure, non-custodial wallet with real-time websocket updates and biometric authentication.',
+    description: 'Secure, non-custodial wallet with real-time websocket updates and biometric authentication.',
     images: [
       'https://lh3.googleusercontent.com/aida-public/AB6AXuCYieosSjwoLJjC1WWH7GMtfQNx-OZSErJ1T5tFmkc7TA76mXjUpOdGAm5nIS0UMwCSauz_0b6nYQ0ltVLWk5pYxkuCiArfCXNUldrwIdivcmiIRy9f7StsRPI_ZIlguRiXhtrSV5BaTrNnzefBnLH8X80Pkx5iQshyxfup1THEdI33EMLO4K66tIK9jI0oXEwtbc41YG3JXGmbI-CLb__DFzWaN46FLdV9OARbyjID2UXoqvbWbIWrVDbYy16pKUr7jskbX1F7zRQ',
       'https://lh3.googleusercontent.com/aida-public/AB6AXuAaB-3RH1_XogKHseFzazRO7EVpnm0o8_dIU85WjLt2EP2QnNe7n4WUWz0q4IP4CTVXBkLR58wThPqtTjCCioZYMiEqN1kKZwIECeLs5Uz14W4eHO80BMQtunrwd45-7UZCpI8y0OzfOTZl6Zk-R-I9GpD10JSSU6NdjjMuRYjoLUEy37F9WepqDSP4moKIowpoFhYm5ooDpe7Q-zu3BHTooV6IDXUf4Ob9KW22Ngo9sAFmI3RJ-faKA9keRz1gK5WAviaLNVdfg1k',
@@ -113,8 +108,7 @@ export const allProjects: Project[] = [
   {
     title: 'CryptoWallet X',
     authors: [],
-    description:
-      'Secure, non-custodial wallet with real-time websocket updates and biometric authentication.',
+    description: 'Secure, non-custodial wallet with real-time websocket updates and biometric authentication.',
     images: [
       'https://lh3.googleusercontent.com/aida-public/AB6AXuCYieosSjwoLJjC1WWH7GMtfQNx-OZSErJ1T5tFmkc7TA76mXjUpOdGAm5nIS0UMwCSauz_0b6nYQ0ltVLWk5pYxkuCiArfCXNUldrwIdivcmiIRy9f7StsRPI_ZIlguRiXhtrSV5BaTrNnzefBnLH8X80Pkx5iQshyxfup1THEdI33EMLO4K66tIK9jI0oXEwtbc41YG3JXGmbI-CLb__DFzWaN46FLdV9OARbyjID2UXoqvbWbIWrVDbYy16pKUr7jskbX1F7zRQ',
       'https://lh3.googleusercontent.com/aida-public/AB6AXuAaB-3RH1_XogKHseFzazRO7EVpnm0o8_dIU85WjLt2EP2QnNe7n4WUWz0q4IP4CTVXBkLR58wThPqtTjCCioZYMiEqN1kKZwIECeLs5Uz14W4eHO80BMQtunrwd45-7UZCpI8y0OzfOTZl6Zk-R-I9GpD10JSSU6NdjjMuRYjoLUEy37F9WepqDSP4moKIowpoFhYm5ooDpe7Q-zu3BHTooV6IDXUf4Ob9KW22Ngo9sAFmI3RJ-faKA9keRz1gK5WAviaLNVdfg1k',
@@ -126,8 +120,7 @@ export const allProjects: Project[] = [
   {
     title: 'CryptoWallet X',
     authors: [],
-    description:
-      'Secure, non-custodial wallet with real-time websocket updates and biometric authentication.',
+    description: 'Secure, non-custodial wallet with real-time websocket updates and biometric authentication.',
     images: [
       'https://lh3.googleusercontent.com/aida-public/AB6AXuCYieosSjwoLJjC1WWH7GMtfQNx-OZSErJ1T5tFmkc7TA76mXjUpOdGAm5nIS0UMwCSauz_0b6nYQ0ltVLWk5pYxkuCiArfCXNUldrwIdivcmiIRy9f7StsRPI_ZIlguRiXhtrSV5BaTrNnzefBnLH8X80Pkx5iQshyxfup1THEdI33EMLO4K66tIK9jI0oXEwtbc41YG3JXGmbI-CLb__DFzWaN46FLdV9OARbyjID2UXoqvbWbIWrVDbYy16pKUr7jskbX1F7zRQ',
       'https://lh3.googleusercontent.com/aida-public/AB6AXuAaB-3RH1_XogKHseFzazRO7EVpnm0o8_dIU85WjLt2EP2QnNe7n4WUWz0q4IP4CTVXBkLR58wThPqtTjCCioZYMiEqN1kKZwIECeLs5Uz14W4eHO80BMQtunrwd45-7UZCpI8y0OzfOTZl6Zk-R-I9GpD10JSSU6NdjjMuRYjoLUEy37F9WepqDSP4moKIowpoFhYm5ooDpe7Q-zu3BHTooV6IDXUf4Ob9KW22Ngo9sAFmI3RJ-faKA9keRz1gK5WAviaLNVdfg1k',
@@ -139,8 +132,7 @@ export const allProjects: Project[] = [
   {
     title: 'CryptoWallet X',
     authors: [],
-    description:
-      'Secure, non-custodial wallet with real-time websocket updates and biometric authentication.',
+    description: 'Secure, non-custodial wallet with real-time websocket updates and biometric authentication.',
     images: [
       'https://lh3.googleusercontent.com/aida-public/AB6AXuCYieosSjwoLJjC1WWH7GMtfQNx-OZSErJ1T5tFmkc7TA76mXjUpOdGAm5nIS0UMwCSauz_0b6nYQ0ltVLWk5pYxkuCiArfCXNUldrwIdivcmiIRy9f7StsRPI_ZIlguRiXhtrSV5BaTrNnzefBnLH8X80Pkx5iQshyxfup1THEdI33EMLO4K66tIK9jI0oXEwtbc41YG3JXGmbI-CLb__DFzWaN46FLdV9OARbyjID2UXoqvbWbIWrVDbYy16pKUr7jskbX1F7zRQ',
       'https://lh3.googleusercontent.com/aida-public/AB6AXuAaB-3RH1_XogKHseFzazRO7EVpnm0o8_dIU85WjLt2EP2QnNe7n4WUWz0q4IP4CTVXBkLR58wThPqtTjCCioZYMiEqN1kKZwIECeLs5Uz14W4eHO80BMQtunrwd45-7UZCpI8y0OzfOTZl6Zk-R-I9GpD10JSSU6NdjjMuRYjoLUEy37F9WepqDSP4moKIowpoFhYm5ooDpe7Q-zu3BHTooV6IDXUf4Ob9KW22Ngo9sAFmI3RJ-faKA9keRz1gK5WAviaLNVdfg1k',
@@ -152,8 +144,7 @@ export const allProjects: Project[] = [
   {
     title: 'CryptoWallet X',
     authors: [],
-    description:
-      'Secure, non-custodial wallet with real-time websocket updates and biometric authentication.',
+    description: 'Secure, non-custodial wallet with real-time websocket updates and biometric authentication.',
     images: [
       'https://lh3.googleusercontent.com/aida-public/AB6AXuCYieosSjwoLJjC1WWH7GMtfQNx-OZSErJ1T5tFmkc7TA76mXjUpOdGAm5nIS0UMwCSauz_0b6nYQ0ltVLWk5pYxkuCiArfCXNUldrwIdivcmiIRy9f7StsRPI_ZIlguRiXhtrSV5BaTrNnzefBnLH8X80Pkx5iQshyxfup1THEdI33EMLO4K66tIK9jI0oXEwtbc41YG3JXGmbI-CLb__DFzWaN46FLdV9OARbyjID2UXoqvbWbIWrVDbYy16pKUr7jskbX1F7zRQ',
       'https://lh3.googleusercontent.com/aida-public/AB6AXuAaB-3RH1_XogKHseFzazRO7EVpnm0o8_dIU85WjLt2EP2QnNe7n4WUWz0q4IP4CTVXBkLR58wThPqtTjCCioZYMiEqN1kKZwIECeLs5Uz14W4eHO80BMQtunrwd45-7UZCpI8y0OzfOTZl6Zk-R-I9GpD10JSSU6NdjjMuRYjoLUEy37F9WepqDSP4moKIowpoFhYm5ooDpe7Q-zu3BHTooV6IDXUf4Ob9KW22Ngo9sAFmI3RJ-faKA9keRz1gK5WAviaLNVdfg1k',
@@ -165,8 +156,7 @@ export const allProjects: Project[] = [
   {
     title: 'CryptoWallet X',
     authors: [],
-    description:
-      'Secure, non-custodial wallet with real-time websocket updates and biometric authentication.',
+    description: 'Secure, non-custodial wallet with real-time websocket updates and biometric authentication.',
     images: [
       'https://lh3.googleusercontent.com/aida-public/AB6AXuCYieosSjwoLJjC1WWH7GMtfQNx-OZSErJ1T5tFmkc7TA76mXjUpOdGAm5nIS0UMwCSauz_0b6nYQ0ltVLWk5pYxkuCiArfCXNUldrwIdivcmiIRy9f7StsRPI_ZIlguRiXhtrSV5BaTrNnzefBnLH8X80Pkx5iQshyxfup1THEdI33EMLO4K66tIK9jI0oXEwtbc41YG3JXGmbI-CLb__DFzWaN46FLdV9OARbyjID2UXoqvbWbIWrVDbYy16pKUr7jskbX1F7zRQ',
       'https://lh3.googleusercontent.com/aida-public/AB6AXuAaB-3RH1_XogKHseFzazRO7EVpnm0o8_dIU85WjLt2EP2QnNe7n4WUWz0q4IP4CTVXBkLR58wThPqtTjCCioZYMiEqN1kKZwIECeLs5Uz14W4eHO80BMQtunrwd45-7UZCpI8y0OzfOTZl6Zk-R-I9GpD10JSSU6NdjjMuRYjoLUEy37F9WepqDSP4moKIowpoFhYm5ooDpe7Q-zu3BHTooV6IDXUf4Ob9KW22Ngo9sAFmI3RJ-faKA9keRz1gK5WAviaLNVdfg1k',
@@ -178,8 +168,7 @@ export const allProjects: Project[] = [
   {
     title: 'CryptoWallet X',
     authors: [],
-    description:
-      'Secure, non-custodial wallet with real-time websocket updates and biometric authentication.',
+    description: 'Secure, non-custodial wallet with real-time websocket updates and biometric authentication.',
     images: [
       'https://lh3.googleusercontent.com/aida-public/AB6AXuCYieosSjwoLJjC1WWH7GMtfQNx-OZSErJ1T5tFmkc7TA76mXjUpOdGAm5nIS0UMwCSauz_0b6nYQ0ltVLWk5pYxkuCiArfCXNUldrwIdivcmiIRy9f7StsRPI_ZIlguRiXhtrSV5BaTrNnzefBnLH8X80Pkx5iQshyxfup1THEdI33EMLO4K66tIK9jI0oXEwtbc41YG3JXGmbI-CLb__DFzWaN46FLdV9OARbyjID2UXoqvbWbIWrVDbYy16pKUr7jskbX1F7zRQ',
       'https://lh3.googleusercontent.com/aida-public/AB6AXuAaB-3RH1_XogKHseFzazRO7EVpnm0o8_dIU85WjLt2EP2QnNe7n4WUWz0q4IP4CTVXBkLR58wThPqtTjCCioZYMiEqN1kKZwIECeLs5Uz14W4eHO80BMQtunrwd45-7UZCpI8y0OzfOTZl6Zk-R-I9GpD10JSSU6NdjjMuRYjoLUEy37F9WepqDSP4moKIowpoFhYm5ooDpe7Q-zu3BHTooV6IDXUf4Ob9KW22Ngo9sAFmI3RJ-faKA9keRz1gK5WAviaLNVdfg1k',
@@ -191,8 +180,7 @@ export const allProjects: Project[] = [
   {
     title: 'CryptoWallet X',
     authors: [],
-    description:
-      'Secure, non-custodial wallet with real-time websocket updates and biometric authentication.',
+    description: 'Secure, non-custodial wallet with real-time websocket updates and biometric authentication.',
     images: [
       'https://lh3.googleusercontent.com/aida-public/AB6AXuCYieosSjwoLJjC1WWH7GMtfQNx-OZSErJ1T5tFmkc7TA76mXjUpOdGAm5nIS0UMwCSauz_0b6nYQ0ltVLWk5pYxkuCiArfCXNUldrwIdivcmiIRy9f7StsRPI_ZIlguRiXhtrSV5BaTrNnzefBnLH8X80Pkx5iQshyxfup1THEdI33EMLO4K66tIK9jI0oXEwtbc41YG3JXGmbI-CLb__DFzWaN46FLdV9OARbyjID2UXoqvbWbIWrVDbYy16pKUr7jskbX1F7zRQ',
       'https://lh3.googleusercontent.com/aida-public/AB6AXuAaB-3RH1_XogKHseFzazRO7EVpnm0o8_dIU85WjLt2EP2QnNe7n4WUWz0q4IP4CTVXBkLR58wThPqtTjCCioZYMiEqN1kKZwIECeLs5Uz14W4eHO80BMQtunrwd45-7UZCpI8y0OzfOTZl6Zk-R-I9GpD10JSSU6NdjjMuRYjoLUEy37F9WepqDSP4moKIowpoFhYm5ooDpe7Q-zu3BHTooV6IDXUf4Ob9KW22Ngo9sAFmI3RJ-faKA9keRz1gK5WAviaLNVdfg1k',

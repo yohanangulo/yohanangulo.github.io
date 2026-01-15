@@ -28,7 +28,9 @@ export default function Hero() {
                   <span className="text-3xl font-bold text-white tracking-tight leading-none">
                     {messages.hero_years_experience_num}
                   </span>
-                  <span className="text-[10px] text-slate-500 font-bold uppercase tracking-wider">{messages.hero_years_exp}</span>
+                  <span className="text-[10px] text-slate-500 font-bold uppercase tracking-wider">
+                    {messages.hero_years_exp}
+                  </span>
                 </div>
                 <div className="flex flex-col gap-1">
                   <span className="text-3xl font-bold text-white tracking-tight leading-none">
@@ -97,7 +99,8 @@ export default function Hero() {
                 </div>
                 <div className="font-mono text-[9px] leading-relaxed text-blue-300 opacity-70 group-hover:opacity-100 transition-opacity">
                   <span className="text-purple-400">class</span> <span className="text-yellow-300">Dashboard</span>{' '}
-                  <span className="text-purple-400">extends</span> <span className="text-yellow-300">ConsumerWidget</span> {'{'}
+                  <span className="text-purple-400">extends</span>{' '}
+                  <span className="text-yellow-300">ConsumerWidget</span> {'{'}
                   <br />
                   <br />
                   <span className="text-slate-500">{'// Optimized build method'}</span>
@@ -107,11 +110,13 @@ export default function Hero() {
                   <span className="text-yellow-300">Widget</span> <span className="text-blue-300">build</span>(
                   <span className="text-yellow-300">context</span>, <span className="text-yellow-300">ref</span>) {'{'}
                   <br />
-                  <span className="text-purple-400">final</span> stream = ref.<span className="text-blue-300">watch</span>
+                  <span className="text-purple-400">final</span> stream = ref.
+                  <span className="text-blue-300">watch</span>
                   (streamProvider);
                   <br />
                   <br />
-                  <span className="text-purple-400">return</span> <span className="text-yellow-300">Scaffold</span>(<br />
+                  <span className="text-purple-400">return</span> <span className="text-yellow-300">Scaffold</span>(
+                  <br />
                     body: <span className="text-yellow-300">CustomScrollView</span>(<br />
                       slivers: [<br />
                         <span className="text-yellow-300">SliverAppBar</span>(<br />

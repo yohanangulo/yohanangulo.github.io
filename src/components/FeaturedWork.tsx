@@ -64,7 +64,10 @@ export default function FeaturedWork() {
   }
 
   return (
-    <section className="w-full max-w-7xl px-4 sm:px-6 lg:px-8 py-16 md:py-24 border-b border-border-dark/30 mx-auto" id="work">
+    <section
+      className="w-full max-w-7xl px-4 sm:px-6 lg:px-8 py-16 md:py-24 border-b border-border-dark/30 mx-auto"
+      id="work"
+    >
       <div className="space-y-6 mb-12">
         <div className="flex flex-col gap-4 max-w-3xl">
           <h2 className="text-4xl md:text-5xl font-black tracking-tight leading-[1.1] text-white">
@@ -91,7 +94,9 @@ export default function FeaturedWork() {
             <div className="flex-1 flex flex-col gap-6">
               <div className="space-y-2">
                 <div className="flex items-center gap-3 mb-1">
-                  <h3 className="text-2xl font-bold text-white group-hover:text-primary transition-colors">{project.title}</h3>
+                  <h3 className="text-2xl font-bold text-white group-hover:text-primary transition-colors">
+                    {project.title}
+                  </h3>
                   {project.status && (
                     <span
                       className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium ring-1 ring-inset ${getStatusColor(
@@ -223,7 +228,9 @@ export default function FeaturedWork() {
                     <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent"></div>
                   )}
                   {/* Status Bar Overlay for project 2 */}
-                  {project.id === 2 && <div className="absolute top-0 w-full h-8 bg-black/10 backdrop-blur-[2px]"></div>}
+                  {project.id === 2 && (
+                    <div className="absolute top-0 w-full h-8 bg-black/10 backdrop-blur-[2px]"></div>
+                  )}
                 </div>
               </div>
             </motion.div>

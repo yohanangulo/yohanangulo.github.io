@@ -161,19 +161,25 @@ body {
 .phone-frame-1 {
   transform: translateY(5rem);
   opacity: 0;
-  animation: slideInUp 0.8s ease-out 0.2s forwards, demoGroupHover1 2s cubic-bezier(0.4, 0, 0.2, 1) 1.7s forwards;
+  animation:
+    slideInUp 0.8s ease-out 0.2s forwards,
+    demoGroupHover1 2s cubic-bezier(0.4, 0, 0.2, 1) 1.7s forwards;
 }
 
 .phone-frame-2 {
   transform: translateY(5rem);
   opacity: 0;
-  animation: slideInUp 0.8s ease-out 0.6s forwards, demoGroupHover2 2s cubic-bezier(0.4, 0, 0.2, 1) 1.7s forwards;
+  animation:
+    slideInUp 0.8s ease-out 0.6s forwards,
+    demoGroupHover2 2s cubic-bezier(0.4, 0, 0.2, 1) 1.7s forwards;
 }
 
 .phone-frame-3 {
   transform: translateY(5rem);
   opacity: 0;
-  animation: slideInUp 0.8s ease-out 1s forwards, demoGroupHover3 2s cubic-bezier(0.4, 0, 0.2, 1) 1.7s forwards;
+  animation:
+    slideInUp 0.8s ease-out 1s forwards,
+    demoGroupHover3 2s cubic-bezier(0.4, 0, 0.2, 1) 1.7s forwards;
 }
 
 .demo-container {

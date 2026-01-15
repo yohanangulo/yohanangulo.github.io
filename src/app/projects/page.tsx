@@ -84,7 +84,9 @@ export default function AllProjects() {
               <h1 className="text-white text-4xl md:text-5xl font-black leading-tight tracking-[-0.033em]">
                 {messages.projects_title}
               </h1>
-              <p className="text-text-secondary text-lg font-normal leading-normal max-w-2xl">{messages.projects_description}</p>
+              <p className="text-text-secondary text-lg font-normal leading-normal max-w-2xl">
+                {messages.projects_description}
+              </p>
             </div>
           </div>
 
