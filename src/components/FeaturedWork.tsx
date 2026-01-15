@@ -7,8 +7,6 @@ import { featuredProjects as projects, messages } from '@/../data'
 import { Variants } from 'motion'
 import { motion } from 'motion/react'
 
-type Author = { name: string; url?: string }
-
 export default function FeaturedWork() {
   const cardVariants: Variants = {
     hidden: (i: number) => ({
@@ -105,11 +103,11 @@ export default function FeaturedWork() {
                   )}
                 </div>
                 {/* Authors */}
-                {'authors' in project && (project.authors as Author[]).length > 0 && (
+                {project.authors && project.authors.length > 0 && (
                   <div className="flex items-center gap-2">
                     <span className="text-xs text-slate-500">with</span>
                     <div className="flex flex-wrap gap-1.5">
-                      {(project.authors as Author[]).map((author, idx) =>
+                      {project.authors.map((author, idx) =>
                         author.url ? (
                           <a
                             key={idx}

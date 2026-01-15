@@ -121,7 +121,7 @@ export default function AllProjects() {
                     <div className="flex items-center gap-2 -mt-2">
                       <span className="text-[11px] text-text-secondary">with</span>
                       <div className="flex flex-wrap gap-1">
-                        {project.authors.map((author: { name: string; url?: string }, idx: number) =>
+                        {project.authors.map((author, idx) =>
                           author.url ? (
                             <a
                               key={idx}
