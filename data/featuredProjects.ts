@@ -1,15 +1,11 @@
+import { defaultAuthors } from './authors'
 import type { FeaturedProject } from './types'
 
 export const featuredProjects: FeaturedProject[] = [
   {
     id: 1,
     title: 'Kairos',
-    authors: [
-      {
-        name: 'Yohan Angulo',
-        url: 'https://github.com/yohanangulo',
-      },
-    ],
+    authors: defaultAuthors,
     status: {
       text: 'Live on Store',
       color: 'green',
