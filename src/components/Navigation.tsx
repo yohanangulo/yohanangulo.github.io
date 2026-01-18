@@ -28,9 +28,13 @@ export default function Navigation({ children }: NavigationProps) {
             <Link className="text-slate-300 hover:text-white text-sm font-medium transition-colors" href="/#about">
               {messages.nav_link_about}
             </Link>
-            <button className="cursor-pointer flex items-center justify-center gap-2 h-9 px-4 bg-primary hover:bg-primary/90 text-white text-sm font-bold rounded-lg transition-all shadow-[0_0_15px_rgba(43,140,238,0.3)] hover:shadow-[0_0_20px_rgba(43,140,238,0.5)]">
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              className="cursor-pointer flex items-center justify-center gap-2 h-9 px-4 bg-primary hover:bg-primary/90 text-white text-sm font-bold rounded-lg transition-all shadow-[0_0_15px_rgba(43,140,238,0.3)] hover:shadow-[0_0_20px_rgba(43,140,238,0.5)]"
+            >
               <span className="capitalize">{messages.nav_button_resume}</span>
-            </button>
+            </a>
           </div>
           <button className="md:hidden text-slate-300 hover:text-white">
             <span className="material-icons">menu</span>
