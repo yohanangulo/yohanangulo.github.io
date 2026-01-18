@@ -1,10 +1,11 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import ScrollToTop from '@/components/ScrollToTop'
+import { messages } from '../../data'
 
 export const metadata: Metadata = {
-  title: 'John Doe - Senior Flutter Engineer',
-  description: 'Portfolio of John Doe, Senior Flutter Engineer specializing in mobile development',
+  title: messages.meta_title,
+  description: messages.meta_description,
 }
 
 export default function RootLayout({

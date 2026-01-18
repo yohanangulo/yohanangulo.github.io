@@ -65,4 +65,9 @@ export const messages = {
 
   // UI Elements
   scroll_to_top: 'Scroll to top',
+
+  // metadata
+  meta_title: 'Yohan Angulo - Senior Flutter Developer',
+  meta_description:
+    'Portfolio of Yohan Angulo, Senior Flutter Developer specializing in building high-performance mobile applications with Flutter.',
 }
