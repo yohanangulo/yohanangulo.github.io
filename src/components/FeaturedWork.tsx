@@ -207,6 +207,17 @@ export default function FeaturedWork() {
                     project.id === 2 ? 'bg-white' : project.id === 3 ? 'bg-[#e5e5e5]' : 'bg-[#0d131a]'
                   }`}
                 >
+                  {project.id === 2 && (
+                    <video
+                      src={project.image}
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      controls={false}
+                      className="w-full h-auto"
+                    />
+                  )}
                   <Image
                     alt={`${project.title} UI`}
                     src={project.image}

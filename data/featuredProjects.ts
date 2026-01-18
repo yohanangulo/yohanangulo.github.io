@@ -1,4 +1,4 @@
-import { defaultAuthors } from './authors'
+import { defaultAuthors, yohanAuthor } from './authors'
 import type { FeaturedProject } from './types'
 
 export const featuredProjects: FeaturedProject[] = [
@@ -42,42 +42,26 @@ export const featuredProjects: FeaturedProject[] = [
     image: '/kairos/Kairos SS - 1.png',
   },
   {
-    id: 1,
-    title: 'Context First',
-    authors: [],
-    status: { text: 'Live on Store', color: 'green' },
-    description:
-      'A high-frequency trading dashboard designed for rapid financial decision making. Solved complex state synchronization challenges using Bloc and WebSockets for real-time ticker updates.',
-    metrics: [
-      { icon: 'sync_alt', label: 'State Management', value: 'Complex (Bloc)' },
-      { icon: 'architecture', label: 'Architecture', value: 'Clean, Scalable' },
-    ],
-    techStack: ['Flutter', 'Bloc', 'GraphQL', 'Clean Arch'],
-    actions: [
-      { icon: 'smartphone', label: 'View App', type: 'primary' },
-      { icon: 'code', label: 'Source Code', type: 'secondary' },
-    ],
-    image:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuClTjpVqePQJ5HC4TLcNcnhpsY5m55tx8A4iUTGYaRN_To3yERD3HgGHh2q0hy3oQFPVVSYt5x86nDwpJwyFhvQKQpsJVCuuxMOQcQ7OVuC-HTg6-DwTCZvvkMH0XWVvt2T70u9wZ24-qaCtQgFxJtuD900xbjdRdEDsxE4k_eY6XKjq0qFoONuKIrcuPtYFFMzIxZQOoT-4IVKK_n6RHPOq3fQjAoULn_4ltCUDjLu0LjofkzMJrhBhyO_yQyH606_bFN0DWP--UOM',
-  },
-  {
     id: 2,
-    title: 'ShopScale',
-    authors: [],
-    status: { text: 'Scaling Phase', color: 'blue' },
+    title: 'Venley',
+    status: { text: 'Live on Store', color: 'green' },
+    authors: [yohanAuthor, { name: 'Venley Team', url: 'https://www.venley.ai/' }],
     description:
-      'A white-label e-commerce solution focused on smooth list virtualization and image optimization. Implemented custom caching strategies to handle large product catalogs.',
+      'A legal research platform for Venezuelan lawyers and law students. Features comprehensive access to TSJ court judgments, official gazettes, and legal acts with advanced search, personal collections, and      subscription-based premium features. Implements clean architecture with BLoC state management.',
     metrics: [
-      { icon: 'group', label: 'User Base', value: '50k+ Active' },
-      { icon: 'speed', label: 'FPS', value: 'Consistent 60' },
+      { icon: 'sync_alt', label: 'State Management', value: 'BLoC/Cubit' },
+      { icon: 'architecture', label: 'Architecture', value: 'Clean (Feature-First)' },
     ],
-    techStack: ['Flutter', 'Riverpod', 'Firebase', 'Stripe SDK'],
+    techStack: ['Flutter', 'BLoC', 'Firebase', 'Retrofit', 'Go Router', 'Freezed', 'Clean Arch'],
     actions: [
-      { icon: 'smartphone', label: 'View App', type: 'primary' },
-      { icon: 'lock', label: 'Private Repo', type: 'secondary' },
+      {
+        icon: 'smartphone',
+        label: 'View App',
+        type: 'primary',
+        url: 'https://play.google.com/store/apps/details?id=io.venley.app',
+      },
     ],
-    image:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuCQ784jcoXC8XMkKjyFKIxEm_nZKRdOfv30rU_d-Au2a_1oBI6JrVryo5Ixu9kIOxOMdeKCk0KNtHvrP7G9u30Ki1SVqY4aoiBlpYIFQTvB32vcjFdjsoUvIMCisDRZUMg1xmF4jktbaXkVXt3QwMRDz_3mGbZdrsFxERWVHWjgIhK2AbSh6j2aBHexCV9vyspTxm9XU0dGL4CORt2MbCi4APX5KaFWK53Pq11XilMRheIxFj1uMUS8EqOUBGaq0EJXKDUo5gFkyDBk',
+    image: '/venley/demo.mp4',
   },
   {
     id: 3,
