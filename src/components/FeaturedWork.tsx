@@ -58,6 +58,8 @@ export default function FeaturedWork() {
         return 'bg-green-500/10 text-green-500 ring-green-500/20'
       case 'blue':
         return 'bg-blue-500/10 text-blue-500 ring-blue-500/20'
+      case 'red':
+        return 'bg-red-500/10 text-red-500 ring-red-500/20'
       default:
         return 'bg-gray-500/10 text-gray-500 ring-gray-500/20'
     }
@@ -207,7 +209,7 @@ export default function FeaturedWork() {
                     project.id === 2 ? 'bg-white' : project.id === 3 ? 'bg-[#e5e5e5]' : 'bg-[#0d131a]'
                   }`}
                 >
-                  {project.id === 2 && (
+                  {project.image.endsWith('.mp4') ? (
                     <video
                       src={project.image}
                       autoPlay
@@ -217,14 +219,15 @@ export default function FeaturedWork() {
                       controls={false}
                       className="w-full h-auto"
                     />
+                  ) : (
+                    <Image
+                      alt={`${project.title} UI`}
+                      src={project.image}
+                      width={196}
+                      height={392}
+                      className="w-full h-full object-cover"
+                    />
                   )}
-                  <Image
-                    alt={`${project.title} UI`}
-                    src={project.image}
-                    width={196}
-                    height={392}
-                    className="w-full h-full object-cover"
-                  />
                   {/* Overlay Gradient for depth */}
                   <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent"></div>
                 </div>

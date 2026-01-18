@@ -65,20 +65,23 @@ export const featuredProjects: FeaturedProject[] = [
   },
   {
     id: 3,
-    title: 'Connect',
-    authors: [],
+    title: 'SpendingPal',
+    status: { text: 'In Development', color: 'red' },
     description:
-      'Real-time messaging architecture supporting complex media attachments and voice notes. Built with a custom WebSocket implementation and offline-first database syncing.',
+      'A personal expense tracking application for managing daily spending. Features transaction management with categories, dashboard analytics, speech-to-text input, multi-language support (English/Spanish), and offline-first architecture with cloud sync. Implements clean architecture with BLoC state management.',
     metrics: [
-      { icon: 'hub', label: 'Concurrency', value: '500+ Active' },
-      { icon: 'verified_user', label: 'Delivery Rate', value: '99.99%' },
+      { icon: 'sync_alt', label: 'State Management', value: 'BLoC/Cubit' },
+      { icon: 'architecture', label: 'Architecture', value: 'Clean (Feature-First)' },
     ],
-    techStack: ['Flutter', 'WebSockets', 'GoRouter', 'Drift DB'],
+    techStack: ['Flutter', 'BLoC', 'Firebase', 'Drift', 'Go Router', 'Freezed', 'Clean Arch'],
     actions: [
-      { icon: 'smartphone', label: 'View App', type: 'primary' },
-      { icon: 'code', label: 'Source Code', type: 'secondary' },
+      {
+        icon: 'code',
+        label: 'View Code',
+        type: 'secondary',
+        url: 'https://github.com/yohanangulo/spending-pal',
+      },
     ],
-    image:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuDFPD6F8SOhDkOywNQMl9gL6TFCt-ffvmIe35aiQ2nvUMMcFpEKTWFeTn2LeZWGEPnEu9OhOsSYZN3dqt5X2Vsj0M4wq6AovY0Q-fudySNblsvKAtmPn5kCEnzP7yoDG3i66J2z3i39rO5ccJLWENoTPoxOmgqO_FL-YKOKaBtOEVwmmJ7gRSCe5CBqbdxVu6XgstkjX-DOoTbquKEr7LcylZDv-tZX2ojrkbPwfcwCqgE8dEtmReLO6bSXky86ZXjhWLaXxOBw3cza',
+    image: '/spendingpal/video_demo.mp4',
   },
 ]
