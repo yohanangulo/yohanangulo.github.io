@@ -119,7 +119,7 @@ export default function FeaturedWork() {
                             href={author.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-slate-800/50 text-xs text-slate-300 hover:text-primary hover:bg-slate-800 transition-colors"
+                            className="inline-flex items-center gap-1 px-3.5 py-0.5 rounded-full bg-border-dark/50 text-[11px] text-slate-300 hover:text-white hover:bg-primary transition-colors"
                           >
                             <span className="material-icons text-[12px]">person</span>
                             {author.name}
@@ -180,7 +180,9 @@ export default function FeaturedWork() {
                     className={`flex items-center gap-2 text-sm font-semibold transition-colors ${
                       action.type === 'primary' ? 'text-white hover:text-primary' : 'text-slate-400 hover:text-white'
                     }`}
-                    href="#"
+                    href={action.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <span className="material-icons text-[20px]">{action.icon}</span>
                     {action.label}
@@ -200,17 +202,6 @@ export default function FeaturedWork() {
             >
               {/* Phone Frame Simulation */}
               <div className="relative w-50 aspect-9/19 rounded-[2.5rem] bg-slate-900 ring-8 ring-slate-800 shadow-2xl group-hover:scale-[1.02] group-hover:-translate-y-2 transition-transform duration-500 ease-out">
-                {/* Notch */}
-                <div
-                  className={`absolute top-0 left-1/2 -translate-x-1/2 h-4.5 w-20 bg-black rounded-b-xl z-20 ${
-                    project.id === 2 ? 'hidden' : ''
-                  }`}
-                ></div>
-                {/* Android hole punch for project 2 */}
-                {project.id === 2 && (
-                  <div className="absolute top-4 left-1/2 -translate-x-1/2 h-3 w-3 bg-black rounded-full z-20"></div>
-                )}
-                {/* Screen */}
                 <div
                   className={`absolute inset-0.5 rounded-[2.3rem] overflow-hidden ${
                     project.id === 2 ? 'bg-white' : project.id === 3 ? 'bg-[#e5e5e5]' : 'bg-[#0d131a]'
@@ -224,13 +215,7 @@ export default function FeaturedWork() {
                     className="w-full h-full object-cover"
                   />
                   {/* Overlay Gradient for depth */}
-                  {project.id === 1 && (
-                    <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent"></div>
-                  )}
-                  {/* Status Bar Overlay for project 2 */}
-                  {project.id === 2 && (
-                    <div className="absolute top-0 w-full h-8 bg-black/10 backdrop-blur-[2px]"></div>
-                  )}
+                  <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent"></div>
                 </div>
               </div>
             </motion.div>
