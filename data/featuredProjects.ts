@@ -30,15 +30,16 @@ export const featuredProjects: FeaturedProject[] = [
         icon: 'smartphone',
         label: 'View App',
         type: 'primary',
+        url: 'https://apps.apple.com/us/app/kairos-moment/id6755447258',
       },
       {
         icon: 'code',
         label: 'Source Code',
         type: 'secondary',
+        url: 'https://github.com/cristianmgm7/kairos',
       },
     ],
-    image:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuClTjpVqePQJ5HC4TLcNcnhpsY5m55tx8A4iUTGYaRN_To3yERD3HgGHh2q0hy3oQFPVVSYt5x86nDwpJwyFhvQKQpsJVCuuxMOQcQ7OVuC-HTg6-DwTCZvvkMH0XWVvt2T70u9wZ24-qaCtQgFxJtuD900xbjdRdEDsxE4k_eY6XKjq0qFoONuKIrcuPtYFFMzIxZQOoT-4IVKK_n6RHPOq3fQjAoULn_4ltCUDjLu0LjofkzMJrhBhyO_yQyH606_bFN0DWP--UOM',
+    image: '/kairos/Kairos SS - 1.png',
   },
   {
     id: 1,

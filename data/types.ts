@@ -13,6 +13,7 @@ export interface ProjectAction {
   icon: string
   label: string
   type: 'primary' | 'secondary'
+  url?: string
 }
 
 export interface ProjectStatus {
