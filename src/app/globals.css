@@ -13,6 +13,8 @@ html {
 }
 
 @theme {
+  --aspect-9/19.5: 9 / 19.5;
+
   --color-primary: #13a4ec;
   --color-background-light: #f6f7f8;
   --color-background-dark: #101c22;
