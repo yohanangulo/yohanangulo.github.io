@@ -11,20 +11,28 @@ export const featuredProjects: FeaturedProject[] = [
       color: 'green',
     },
     description:
-      'A personal journaling and mindfulness app featuring AI-driven insights and multi-modal entries (audio, text, image). Implements a robust offline-first sync engine using Isar and Firestore for seamless dat persistence.',
+      'A personal journaling and mindfulness app featuring multi-modal entries (text, audio, images) with AI-powered insights. Includes audio transcription, image analysis, and intelligent response generation via Firebase Cloud Functions with Genkit. Features streak tracking with GitHub-style heatmap calendar, achievement milestones, 6 insight categories (Mindset, Productivity, Relationships, Career, Health, Purpose), and multi-language support (English/Spanish). Implements Clean Architecture with Riverpod state management, offline-first data sync using Isar, and comprehensive Firebase integration.',
     metrics: [
-      {
-        icon: 'sync_alt',
-        label: 'State Management',
-        value: 'Riverpod',
-      },
-      {
-        icon: 'architecture',
-        label: 'Architecture',
-        value: 'Clean (Feature-First)',
-      },
+      { icon: 'sync_alt', label: 'State Management', value: 'Riverpod' },
+      { icon: 'architecture', label: 'Architecture', value: 'Clean (Feature-First)' },
+      { icon: 'psychology', label: 'AI Features', value: 'Transcription/Analysis/Insights' },
+      { icon: 'cloud_sync', label: 'Backend', value: 'Firebase + Cloud Functions' },
     ],
-    techStack: ['Flutter', 'Riverpod', 'Firebase', 'Isar', 'Clean Arch'],
+    techStack: [
+      'Flutter',
+      'Riverpod',
+      'Firebase Auth',
+      'Cloud Firestore',
+      'Firebase Storage',
+      'Cloud Functions',
+      'Isar',
+      'Dio',
+      'GoRouter',
+      'Google Sign-In',
+      'FL Chart',
+      'Audio Recording',
+      'Clean Arch',
+    ],
     actions: [
       {
         icon: 'smartphone',
