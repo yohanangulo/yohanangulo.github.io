@@ -74,7 +74,7 @@ export const featuredProjects: FeaturedProject[] = [
   {
     id: 3,
     title: 'SpendingPal',
-    status: { text: 'In Development', color: 'red' },
+    status: { text: 'In Development', color: 'orange' },
     description:
       'A personal expense tracking application for managing daily spending. Features transaction management with categories, dashboard analytics, speech-to-text input, multi-language support (English/Spanish), and offline-first architecture with cloud sync. Implements clean architecture with BLoC state management.',
     metrics: [
