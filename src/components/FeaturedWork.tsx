@@ -60,6 +60,8 @@ export default function FeaturedWork() {
         return 'bg-blue-500/10 text-blue-500 ring-blue-500/20'
       case 'red':
         return 'bg-red-500/10 text-red-500 ring-red-500/20'
+      case 'orange':
+        return 'bg-orange-500/10 text-orange-500 ring-orange-500/20'
       default:
         return 'bg-gray-500/10 text-gray-500 ring-gray-500/20'
     }
@@ -217,7 +219,7 @@ export default function FeaturedWork() {
                       loop
                       playsInline
                       controls={false}
-                      className="w-full h-auto"
+                      className="w-full h-auto bg-black"
                     />
                   ) : (
                     <Image

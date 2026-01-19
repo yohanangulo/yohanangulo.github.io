@@ -18,7 +18,7 @@ export interface ProjectAction {
 
 export interface ProjectStatus {
   text: string
-  color: 'green' | 'blue' | 'gray' | 'red'
+  color: 'green' | 'blue' | 'gray' | 'red' | 'orange'
 }
 
 export interface FeaturedProject {
