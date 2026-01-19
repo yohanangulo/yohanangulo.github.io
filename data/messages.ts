@@ -51,7 +51,7 @@ export const messages = {
   projects_description:
     'A curated collection of high-performance mobile applications built with Flutter. Exploring advanced state management, custom animations, and scalable cross-platform architecture.',
   projects_view_code: 'View Code',
-  projects_live_demo: 'Live Demo',
+  projects_view_app: 'View App',
   projects_load_more: 'Load More Projects',
 
   // Footer

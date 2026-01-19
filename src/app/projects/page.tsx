@@ -61,7 +61,7 @@ export default function AllProjects() {
   // Filter projects based on the selected category
   const filteredProjects = allProjects.filter(project => {
     if (filter === 'All') return true
-    return project.categories.includes(filter)
+    return project.categories?.includes(filter) || false
   })
 
   // Load more projects handler
@@ -115,9 +115,15 @@ export default function AllProjects() {
                 </div>
                 <div className="p-6 flex flex-col gap-4 h-full">
                   <div className="flex justify-between items-start pr-10">
-                    <h3 className="text-white text-xl font-bold leading-tight tracking-tight group-hover:text-flutter-blue transition-colors">
-                      {project.title}
-                    </h3>
+                    {project.slug ? (
+                      <Link href={`/projects/${project.slug}`}>
+                        <h3 className="text-white text-xl font-bold leading-tight tracking-tight group-hover:text-flutter-blue transition-colors cursor-pointer">
+                          {project.title}
+                        </h3>
+                      </Link>
+                    ) : (
+                      <h3 className="text-white text-xl font-bold leading-tight tracking-tight">{project.title}</h3>
+                    )}
                   </div>
                   {/* Authors */}
                   {project.authors && project.authors.length > 0 && (
@@ -162,12 +168,23 @@ export default function AllProjects() {
                       >
                         <div
                           key={idx}
-                          className="relative w-full aspect-9/16 rounded-lg overflow-hidden bg-background-dark border border-surface-border/30"
+                          className="relative w-full aspect-9/19.5 rounded-lg overflow-hidden bg-background-dark border border-surface-border/30"
                         >
-                          <div
-                            className={`absolute inset-0 bg-cover bg-center opacity-90 group-hover:opacity-100 transition-transform duration-500 hover:scale-105 transform`}
-                            style={{ backgroundImage: `url("${img}")` }}
-                          ></div>
+                          {img.endsWith('.mp4') ? (
+                            <video
+                              src={img}
+                              autoPlay
+                              muted
+                              loop
+                              playsInline
+                              className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100"
+                            />
+                          ) : (
+                            <div
+                              className="absolute inset-0 bg-cover bg-center opacity-90 group-hover:opacity-100 transition-transform duration-500 hover:scale-105 transform"
+                              style={{ backgroundImage: `url("${img}")` }}
+                            />
+                          )}
                         </div>
                       </motion.div>
                     ))}
@@ -183,22 +200,32 @@ export default function AllProjects() {
                         </span>
                       ))}
                     </div>
-                    <div className="pt-3 border-t border-surface-border flex gap-3">
-                      <a
-                        className="flex flex-1 items-center justify-center gap-2 py-2 rounded-lg bg-white/5 hover:bg-white/10 text-white text-sm font-medium transition-colors"
-                        href="#"
-                      >
-                        <span className="material-icons text-[18px]">code</span>
-                        {messages.projects_view_code}
-                      </a>
-                      <a
-                        className="flex flex-1 items-center justify-center gap-2 py-2 rounded-lg bg-flutter-blue hover:bg-flutter-blue/90 text-background-dark text-sm font-bold transition-colors"
-                        href="#"
-                      >
-                        <span className="material-icons text-[18px]">play_arrow</span>
-                        {messages.projects_live_demo}
-                      </a>
-                    </div>
+                    {(project.codeUrl || project.appUrl) && (
+                      <div className="pt-3 border-t border-surface-border flex gap-3">
+                        {project.codeUrl && (
+                          <a
+                            className="flex flex-1 items-center justify-center gap-2 py-2 rounded-lg bg-white/5 hover:bg-white/10 text-white text-sm font-medium transition-colors"
+                            href={project.codeUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <span className="material-icons text-[18px]">code</span>
+                            {messages.projects_view_code}
+                          </a>
+                        )}
+                        {project.appUrl && (
+                          <a
+                            className="flex flex-1 items-center justify-center gap-2 py-2 rounded-lg bg-flutter-blue hover:bg-flutter-blue/90 text-background-dark text-sm font-bold transition-colors"
+                            href={project.appUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <span className="material-icons text-[18px]">smartphone</span>
+                            {messages.projects_view_app}
+                          </a>
+                        )}
+                      </div>
+                    )}
                   </div>
                 </div>
               </motion.article>

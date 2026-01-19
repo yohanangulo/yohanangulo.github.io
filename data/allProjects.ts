@@ -1,61 +1,18 @@
+import { featuredProjects } from './featuredProjects'
 import type { Project } from './types'
 
 export const allProjects: Project[] = [
-  {
-    title: 'FinTrack Mobile',
-    authors: [
-      {
-        name: 'Yohan Angulo',
-        url: 'https://github.com/yohanangulo',
-      },
-    ],
-    description:
-      'A high-performance financial tracking application with complex data visualization and offline-first capabilities.',
-    images: [
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuDFCVF83OLfnCF9NpQ_1VvReuHg1tgaQkMgA_fpEcmP0_7GHWEpU5h2lAn3IgGxt43pssADDFyekZQ1uNHiYIrp4CGKdM0SjYdnAmB9lL0vVCzlLastX-ZN5Z3L6Pg0y7ycy4AbKtlHnmPmBKhE6YsPXNUXPs1LiVGny6XQU4Bn_GmoPNjZb6rMFEjgrxKOuaGC8NNZIVoHxkvVF8LiGDa32OPCf8KLeNSLuXQPT4G2LxE037oXO8zXrcEqG0gqum9hv0DcBk_m_Zk',
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuA3u3jq3FYJQwE6WlvVuY31P3mnDvSNsvBvn9bUZQKoJkCv8lkloAmf_2jNStAKDXbn1pDaifa1_yzUwZS6grzlxM60V53mrp3riWwmtK8lA8yDVGg02SKwkdVpU4rwtUH19tf-XzpMJ8crG-1aBfASTHZXEuQy_h_AwNToHH0bfMcZZ7cpSAQpfrYpJD-8zMqp9Ca6ILG3H6xio2MwukxA6UeE88bMjQPsDFCrJbhRM_EjVtT6OpiLGcdT7CdPrGvFo-NS1tKbYPw',
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuDZeYlYF-lNTfxMraWhWq4R-aSJd0iJvE62eoFIYAbHP4xeAPnBKbNy9nw1VF3H0x2zgDzoQMRYgXoh_swYHyfT-pnYHHG79e0eDu8VF2FwxLnKVn_0fBAq6_NR5synmsfz_l4yAdCGm9zlUXbyZ0K_9FoTzJJpS50dCcxQJgOhM0O7DH7uZvoONMLuEfXhuWiJHLD_RtWD2dYRFEkCA9_VQ-xOyJnOo3lfEkiifIkKXjSwCdb3crttycVPuDfh9iKAqEj70JNBybo',
-    ],
-    tags: ['Bloc Pattern', 'Sqflite', 'Custom Painters'],
-    categories: ['iOS', 'Android'],
-  },
-  {
-    title: 'NeoHealth Telemed',
-    authors: [],
-    description:
-      'Comprehensive telemedicine suite featuring real-time WebRTC video calls and secure chat functionality.',
-    images: [
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuAngAV_vC3YED0tf4kviCqQuW9CK6DBcXMgYbTH9y_MwGXxfjDzLpcQpCGSoKVAw3wRWrdg2vkqnSl7nXs5kwnsQeuk5UVnJgcdvt1CEPKFA7FcZD-UbsXzLx_F08RaWxTV9D7Pv0vyKmZ9DQhHpfh2IbzHF3fl_Im1ULOtIdbR532vpE8jV_rk-cPscvz2Kb9pMPVdnzrMbNhUSNqL7b0B9FopCExIgdtvuvtScO7LgWUcEE7BNP4-AkFDviydo-2WDAH4xE0bGHY',
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuAFtqjMPBcsyeP7PMbD4v-hzfxmxFL7NN2z2_ieV6rwfbtSxnJFOlt69nTPtyI2ZSZ1yaJSfwlLPQx657jfU4XlGDJK6c_xhEzILvWf7vkhhnDS9w8dyFLxKmpH_enp4TucJBfQyI0bQzMhyCErOY4iP2KO6pdGewSqd9CLVV0VofO16ZFOyrhM_Bg3LrCyGJ7wwk9eMqFzZaO4O2TalMkER2NDO0HAINREHCnYpaJq2U7yS4ftI8IKx6hClNgO5cbT6ZI7fliJdyk',
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuCwOguYrM4gy6X0BNjhoaogiZFiGelZYxHiPSjjoKji0bqDTyNYXXWGdytomNG0eJurM47yuhqUC4fZ8zvqcOCfVy4F1bFli73A8RncmSIF708pPBvvpFIRhBmtCitfWAFHIia9WznsTibnAmAy7owUstP9EyI-aZQeUSH6z8yqmv-GEWyVVZvT1jP0TXjfAGVZZZv0ycg_ueC-10A7baamaJP6DDl1pRDSbVpKKBgK8GkFQiXqtDV6k2ez-6LVVs2-csR6D_imlBA',
-    ],
-    tags: ['Riverpod', 'WebRTC', 'Socket.IO'],
-    categories: ['iOS', 'Android'],
-  },
-  {
-    title: 'AeroTravel Booking',
-    authors: [],
-    description: 'Dynamic flight booking system with hero animations, complex transitions, and sliver scroll effects.',
-    images: [
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuD1xDEjuUExNqzY71aDCU7-JMEroFbuFiOJk1J46cpjPUdyevW6pYQkmXJc2gM4c5eT-eseDES1P4xjIE2lzGwBNaG8NWH4ej_-Wbiv8azsoxj0HaHoa-4i7Uy-h5Iy6tdVa8jQr-LnMLn2Wzi-PgiR3Qlg7REOYyXiJ2H5XVICh5BuMHjhBD9KZ-pGXWOfUI-oS5T4ib0VqdtEhyU63RY8Ah-616nF5KfrYWIghdnHK05heiagFi930dxzeytJ4RpOzTpgUiMfR2k',
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuBKZ7D6eJa2rdh24Io3F6EjSVxcKzR28BeIRHCDS_j8TqJZZklIVS1tGOh26rqUr5F83QXvokpxqTQZAcf_kPreGqAkNd983JwnqO5fU0sqNq_KEGwnkZaVQ0HHPWxdcxKB_9RiHtedbdMph-IW1_3KntHPUO45NCpClA_R4R2xBBVCm0mvo-vcW6U9VqvsA3pHlm6ZgxRNUhs9lr01y7igSjNVi9nka277vxQTisr85iuTANH3yDk-y3iTsJNWTok60e0ntqw0Oco',
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuDotl16BaM5PFvFA3yc29aPURB6Z03fqxXnKMMFEU9yss75WaND6n8MtZWo1MIyQY8M4j7Yooptku3LVJ5rN1RktHeMVQsG-MEhLSVAxjaM5pS6xqDxqYANELVvimE8gbIlwRy2ZFOtAOlyLiZQfjqX4Gxj7JWEEbPjAj6itI2n9qZoM5FdtFyw-0KMtv3Ma37eiNKdXidReN4co3wmmuN50gHzo-VJoRtCeSRYEcX2Uv1wPNP4QGFyjhhk4kuYkU02b-Cn4wkOVWs',
-    ],
-    tags: ['Hero Animations', 'GetX', 'REST API'],
-    categories: ['iOS', 'Android'],
-  },
-  {
-    title: 'ShopFlow Mobile',
-    authors: [],
-    description: 'Cross-platform e-commerce solution focusing on smooth UI/UX, integrated payments, and deep linking.',
-    images: [
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuBwGdRQivGTOXV1tWTRt6Hytm9OUbTtZtAAvL-wtslN_48AdES9WHJGPiJR2CnExMA7TpHyIwVQC526p4IBTrfXgDucsXn1sBMRDZ6RnM1nnx0-tJNSI-rfdp5b7QgL2SCePnvlV9X9hnx801DxF0XEwEEsTNL9P3gFaV9MoEIdLveLfinRtYdgTKBL-7CLoOoLvD8WQ0nz3z9txcVy2EWVOavCs-YLSZMXqpA4XgaBG1nmiadKSWUx-M31vX3l9N3DcfrTz-D7P4c',
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuBcp-0V9JmRBR7XDernIBHPDEDjuv6gWeSnMhGSOGHrd3oZpOJCsXOxeaRgBhgTDSJsbTB1udHwq_WUjdIS16peRdzXywgkk_9pkQvxCExDVVy-exd7U_neAksOFoW9dLqhWdnIgQRM9NZoRCSBiDhWmNK2Cs1WthDN4tNd5t9_e3WEB7EC1xjJfLsckchuGVpaLk0UKopz5JC1lC_RdoqKkvDrj05J-m_hssbPSJe_GxH0Cdz5d_S9abmWlU8AFW_gD8yZAWIpPLs',
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuAsz8Or-3Q-rjlrV8qOsWQk2G9GTEe2nobCmMp1VUl5NFs6vcZjWsMkhRg4BbmnCsaytklV7GayVErlbFHlKeL6a2u3g3uyOj6Ju_3Zz9LQhC9yTFb5m4bM91yB33aohVl69ZZnQhJc-1JGWRPpeG1BO3rTn6_pAFvXeUPEeEvC6O5MfAPAIHHjvZpcyNS7nqxJpSofYe5opiyzP_XeJAAFeMcPDuI8IEmVDi36C013Tqn-MdTa_RJY2pQKGccZNjlzHlbwnDqhqF8',
-    ],
-    tags: ['Provider', 'Stripe SDK', 'Firebase Auth'],
-    categories: ['iOS', 'Android'],
-  },
+  ...featuredProjects.map(project => ({
+    title: project.title,
+    slug: project.slug,
+    authors: project.authors,
+    description: project.description,
+    images: project.gallery || [project.image],
+    tags: project.techStack,
+    status: project.status,
+    metrics: project.metrics,
+    actions: project.actions,
+  })),
   {
     title: 'TaskMaster Pro',
     authors: [],

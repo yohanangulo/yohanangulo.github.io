@@ -37,9 +37,16 @@ export interface FeaturedProject {
 
 export interface Project {
   title: string
+  slug?: string
   authors?: Author[]
   description: string
   images: string[]
   tags: string[]
-  categories: string[]
+  categories?: string[]
+  codeUrl?: string
+  appUrl?: string
+  // Optional fields for details page
+  status?: ProjectStatus
+  metrics?: ProjectMetric[]
+  actions?: ProjectAction[]
 }
