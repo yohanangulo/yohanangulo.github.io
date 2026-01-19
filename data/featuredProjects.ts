@@ -55,12 +55,25 @@ export const featuredProjects: FeaturedProject[] = [
     status: { text: 'Live on Store', color: 'green' },
     authors: [yohanAuthor, { name: 'Venley Team', url: 'https://www.venley.ai/' }],
     description:
-      'A legal research platform for Venezuelan lawyers and law students. Features comprehensive access to TSJ court judgments, official gazettes, and legal acts with advanced search, personal collections, and      subscription-based premium features. Implements clean architecture with BLoC state management.',
+      'A legal research and document management platform for Venezuelan lawyers and law students. Features unified search across legal acts, court judgments, and official gazettes with advanced filtering (date ranges, chambers, gazette types). Includes personalized collections for saving documents, subscription-based access with multiple payment methods, and TOTP-based two-factor authentication. Built with Clean Architecture BLoC for state management, multi-version REST API integration with HTTP caching, and comprehensive Firebase integration. Supports iOS, Android, and Web with multi-flavor configuration',
     metrics: [
       { icon: 'sync_alt', label: 'State Management', value: 'BLoC/Cubit' },
       { icon: 'architecture', label: 'Architecture', value: 'Clean (Feature-First)' },
+      { icon: 'gavel', label: 'Domain', value: 'LegalTech' },
+      { icon: 'cloud_sync', label: 'Backend', value: 'REST API + Firebase' },
     ],
-    techStack: ['Flutter', 'BLoC', 'Firebase', 'Retrofit', 'Go Router', 'Freezed', 'Clean Arch'],
+    techStack: [
+      'Flutter',
+      'BLoC',
+      'Firebase',
+      'Retrofit',
+      'Dio',
+      'GoRouter',
+      'Freezed',
+      'GetIt',
+      'Injectable',
+      'Clean Arch',
+    ],
     actions: [
       {
         icon: 'smartphone',
@@ -80,6 +93,8 @@ export const featuredProjects: FeaturedProject[] = [
     metrics: [
       { icon: 'sync_alt', label: 'State Management', value: 'BLoC/Cubit' },
       { icon: 'architecture', label: 'Architecture', value: 'Clean (Feature-First)' },
+      { icon: 'cloud_sync', label: 'Backend', value: 'Firebase + REST API' },
+      { icon: 'paid', label: 'Domain', value: 'FinTech' },
     ],
     techStack: ['Flutter', 'BLoC', 'Firebase', 'Drift', 'Go Router', 'Freezed', 'Clean Arch'],
     actions: [
@@ -91,5 +106,41 @@ export const featuredProjects: FeaturedProject[] = [
       },
     ],
     image: '/spendingpal/video_demo.mp4',
+  },
+
+  {
+    id: 4,
+    title: 'The Circle Club',
+    authors: [yohanAuthor, { name: 'Kiwi Company', url: 'https://www.kiwicompany.io/' }],
+    status: { text: 'Live on Store', color: 'green' },
+    description:
+      'A multi-role influencer-client collaboration management platform. Features role-based authentication (Admin, Influencer, Client), collaboration workflow management, content upload and approval system, push   notifications, Google Maps integration for location services, and multi-language support (Spanish). Implements Clean Architecture with BLoC state management and comprehensive Firebase integration for analytics and crash       reporting.',
+    metrics: [
+      { icon: 'sync_alt', label: 'State Management', value: 'BLoC/Cubit' },
+      { icon: 'architecture', label: 'Architecture', value: 'Clean (Feature-First)' },
+      { icon: 'people', label: 'User Roles', value: 'Admin/Influencer/Client' },
+      { icon: 'cloud_sync', label: 'Backend', value: 'Supabase + REST API' },
+    ],
+    techStack: [
+      'Flutter',
+      'BLoC',
+      'Supabase',
+      'Firebase',
+      'Dio/Retrofit',
+      'Go Router',
+      'Freezed',
+      'Get_it/Injectable',
+      'Google Maps',
+      'Clean Arch',
+    ],
+    actions: [
+      {
+        icon: 'smartphone',
+        label: 'View App',
+        type: 'primary',
+        url: 'https://apps.apple.com/ve/app/the-circle-club/id6746809046?l=en-GB',
+      },
+    ],
+    image: '/tcc/video_demo.mp4',
   },
 ]
