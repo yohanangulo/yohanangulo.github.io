@@ -5,7 +5,8 @@ import { allProjects, messages } from '@/../data'
 import Navigation from '@/components/Navigation'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
-import { AnimatePresence, motion, Variants } from 'motion/react'
+import { motion, Variants } from 'motion/react'
+import ImageLightbox from '@/components/ImageLightbox'
 
 export default function AllProjects() {
   const [filter] = useState('All')
@@ -219,41 +220,7 @@ export default function AllProjects() {
         </div>
       </div>
 
-      <AnimatePresence>
-        {selectedImage && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={() => setSelectedImage(null)}
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4 backdrop-blur-sm"
-          >
-            <motion.div
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.8, opacity: 0 }}
-              className="relative max-w-7xl max-h-[90vh] w-full h-full flex items-center justify-center"
-              onClick={e => e.stopPropagation()}
-            >
-              <button
-                onClick={() => setSelectedImage(null)}
-                className="absolute top-4 right-4 p-2 text-white/70 hover:text-white bg-black/50 hover:bg-black/70 rounded-full transition-colors z-50 cursor-pointer"
-              >
-                <span className="material-icons text-3xl">close</span>
-              </button>
-              <div
-                className="relative w-full h-full"
-                style={{
-                  backgroundImage: `url("${selectedImage}")`,
-                  backgroundSize: 'contain',
-                  backgroundPosition: 'center',
-                  backgroundRepeat: 'no-repeat',
-                }}
-              />
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      <ImageLightbox selectedImage={selectedImage} onClose={() => setSelectedImage(null)} />
 
       <Footer />
     </main>

@@ -98,9 +98,11 @@ export default function FeaturedWork() {
             <div className="flex-1 flex flex-col gap-6">
               <div className="space-y-2">
                 <div className="flex items-center gap-3 mb-1">
-                  <h3 className="text-2xl font-bold text-white group-hover:text-primary transition-colors">
-                    {project.title}
-                  </h3>
+                  <Link href={`/projects/${project.slug}`}>
+                    <h3 className="text-2xl font-bold text-white group-hover:text-primary transition-colors">
+                      {project.title}
+                    </h3>
+                  </Link>
                   {project.status && (
                     <span
                       className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium ring-1 ring-inset ${getStatusColor(
@@ -192,6 +194,13 @@ export default function FeaturedWork() {
                     {action.label}
                   </a>
                 ))}
+                <Link
+                  href={`/projects/${project.slug}`}
+                  className="flex items-center gap-2 text-sm font-semibold text-slate-400 hover:text-primary transition-colors"
+                >
+                  <span className="material-icons text-[20px]">visibility</span>
+                  View Details
+                </Link>
               </div>
             </div>
 

@@ -23,6 +23,7 @@ export interface ProjectStatus {
 
 export interface FeaturedProject {
   id: number
+  slug: string
   title: string
   authors?: Author[]
   status?: ProjectStatus
@@ -31,6 +32,7 @@ export interface FeaturedProject {
   techStack: string[]
   actions: ProjectAction[]
   image: string
+  gallery?: string[]
 }
 
 export interface Project {

@@ -4,6 +4,7 @@ import type { FeaturedProject } from './types'
 export const featuredProjects: FeaturedProject[] = [
   {
     id: 1,
+    slug: 'kairos',
     title: 'Kairos',
     authors: defaultAuthors,
     status: {
@@ -48,9 +49,14 @@ export const featuredProjects: FeaturedProject[] = [
       },
     ],
     image: '/kairos/Kairos SS - 1.png',
+    gallery: [
+      '/kairos/Kairos SS - 1.png',
+      // Add more images here: '/kairos/screenshot-2.png', etc.
+    ],
   },
   {
     id: 2,
+    slug: 'venley',
     title: 'Venley',
     status: { text: 'Live on Store', color: 'green' },
     authors: [yohanAuthor, { name: 'Venley Team', url: 'https://www.venley.ai/' }],
@@ -83,9 +89,14 @@ export const featuredProjects: FeaturedProject[] = [
       },
     ],
     image: '/venley/demo.mp4',
+    gallery: [
+      '/venley/demo.mp4',
+      // Add more images here: '/venley/screenshot-2.png', etc.
+    ],
   },
   {
     id: 3,
+    slug: 'spendingpal',
     title: 'SpendingPal',
     status: { text: 'In Development', color: 'orange' },
     description:
@@ -106,10 +117,15 @@ export const featuredProjects: FeaturedProject[] = [
       },
     ],
     image: '/spendingpal/video_demo.mp4',
+    gallery: [
+      '/spendingpal/video_demo.mp4',
+      // Add more images here: '/spendingpal/screenshot-2.png', etc.
+    ],
   },
 
   {
     id: 4,
+    slug: 'the-circle-club',
     title: 'The Circle Club',
     authors: [yohanAuthor, { name: 'Kiwi Company', url: 'https://www.kiwicompany.io/' }],
     status: { text: 'Live on Store', color: 'green' },
@@ -142,5 +158,9 @@ export const featuredProjects: FeaturedProject[] = [
       },
     ],
     image: '/tcc/video_demo.mp4',
+    gallery: [
+      '/tcc/video_demo.mp4',
+      // Add more images here: '/tcc/screenshot-2.png', etc.
+    ],
   },
 ]
