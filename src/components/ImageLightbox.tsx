@@ -1,5 +1,6 @@
 'use client'
 
+import { useEffect } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
 
 interface ImageLightboxProps {
@@ -9,6 +10,17 @@ interface ImageLightboxProps {
 
 export default function ImageLightbox({ selectedImage, onClose }: ImageLightboxProps) {
   const isVideo = selectedImage?.endsWith('.mp4')
+
+  useEffect(() => {
+    if (!selectedImage) return
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose()
+    }
+
+    document.addEventListener('keydown', handleKeyDown)
+    return () => document.removeEventListener('keydown', handleKeyDown)
+  }, [selectedImage, onClose])
 
   return (
     <AnimatePresence>
@@ -25,10 +37,12 @@ export default function ImageLightbox({ selectedImage, onClose }: ImageLightboxP
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.8, opacity: 0 }}
             className="relative max-w-7xl max-h-[90vh] w-full h-full flex items-center justify-center"
-            onClick={e => e.stopPropagation()}
           >
             <button
-              onClick={onClose}
+              onClick={e => {
+                e.stopPropagation()
+                onClose()
+              }}
               className="absolute top-4 right-4 p-2 text-white/70 hover:text-white bg-black/50 hover:bg-black/70 rounded-full transition-colors z-50 cursor-pointer"
             >
               <span className="material-icons text-3xl">close</span>
@@ -41,17 +55,16 @@ export default function ImageLightbox({ selectedImage, onClose }: ImageLightboxP
                 loop
                 playsInline
                 controls
+                onClick={e => e.stopPropagation()}
                 className="max-w-full max-h-full object-contain"
               />
             ) : (
-              <div
-                className="relative w-full h-full"
-                style={{
-                  backgroundImage: `url("${selectedImage}")`,
-                  backgroundSize: 'contain',
-                  backgroundPosition: 'center',
-                  backgroundRepeat: 'no-repeat',
-                }}
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                src={selectedImage}
+                alt="Lightbox image"
+                onClick={e => e.stopPropagation()}
+                className="max-w-full max-h-full object-contain"
               />
             )}
           </motion.div>
