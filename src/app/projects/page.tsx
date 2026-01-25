@@ -101,9 +101,17 @@ export default function AllProjects() {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, margin: '-200px' }}
-                className="group relative flex flex-col bg-surface-dark rounded-xl overflow-hidden border border-surface-border hover:border-flutter-blue  shadow-lg hover:shadow-flutter-blue/10"
+                className="group relative flex flex-col bg-surface-dark rounded-xl overflow-hidden border border-surface-border hover:border-flutter-blue shadow-lg hover:shadow-flutter-blue/10"
               >
-                <div className="absolute top-4 right-4 z-10 bg-surface-dark/90 backdrop-blur-sm p-1.5 rounded-lg border border-surface-border">
+                {/* Invisible link overlay for SEO and accessibility */}
+                {project.slug && (
+                  <Link
+                    href={`/projects/${project.slug}`}
+                    className="absolute inset-0 z-10"
+                    aria-label={`Ver detalles de ${project.title}`}
+                  />
+                )}
+                <div className="absolute top-4 right-4 z-20 bg-surface-dark/90 backdrop-blur-sm p-1.5 rounded-lg border border-surface-border pointer-events-none">
                   <svg
                     className="w-6 h-6 text-flutter-blue"
                     fill="currentColor"
@@ -113,17 +121,13 @@ export default function AllProjects() {
                     <path d="M14.314 0L2.3 12 6 15.7 21.684.013h-7.357L14.314 0zm.014 11.072L7.857 17.53l6.47 6.47H21.7l-6.46-6.468 6.46-6.46h-7.37z"></path>
                   </svg>
                 </div>
-                <div className="p-6 flex flex-col gap-4 h-full">
+                <div className="relative z-20 p-6 flex flex-col gap-4 h-full pointer-events-none">
                   <div className="flex justify-between items-start pr-10">
-                    {project.slug ? (
-                      <Link href={`/projects/${project.slug}`}>
-                        <h3 className="text-white text-xl font-bold leading-tight tracking-tight group-hover:text-flutter-blue transition-colors cursor-pointer">
-                          {project.title}
-                        </h3>
-                      </Link>
-                    ) : (
-                      <h3 className="text-white text-xl font-bold leading-tight tracking-tight">{project.title}</h3>
-                    )}
+                    <h3
+                      className={`text-white text-xl font-bold leading-tight tracking-tight ${project.slug ? 'group-hover:text-flutter-blue transition-colors' : ''}`}
+                    >
+                      {project.title}
+                    </h3>
                   </div>
                   {/* Authors */}
                   {project.authors && project.authors.length > 0 && (
@@ -137,7 +141,8 @@ export default function AllProjects() {
                               href={author.url}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-full bg-surface-border/40 text-[10px] text-text-secondary hover:text-flutter-blue transition-colors"
+                              onClick={e => e.stopPropagation()}
+                              className="pointer-events-auto inline-flex items-center gap-1 px-1.5 py-0.5 rounded-full bg-surface-border/40 text-[10px] text-text-secondary hover:text-flutter-blue transition-colors"
                             >
                               {author.name}
                             </a>
@@ -163,8 +168,12 @@ export default function AllProjects() {
                         initial="imgHidden"
                         whileInView="imgVisible"
                         viewport={{ once: true, margin: '-50px' }}
-                        onClick={() => setSelectedImage(img)}
-                        className="cursor-pointer"
+                        onClick={e => {
+                          e.preventDefault()
+                          e.stopPropagation()
+                          setSelectedImage(img)
+                        }}
+                        className="cursor-pointer pointer-events-auto"
                       >
                         <div
                           key={idx}
@@ -204,10 +213,11 @@ export default function AllProjects() {
                       <div className="pt-3 border-t border-surface-border flex gap-3">
                         {project.codeUrl && (
                           <a
-                            className="flex flex-1 items-center justify-center gap-2 py-2 rounded-lg bg-white/5 hover:bg-white/10 text-white text-sm font-medium transition-colors"
+                            className="pointer-events-auto flex flex-1 items-center justify-center gap-2 py-2 rounded-lg bg-white/5 hover:bg-white/10 text-white text-sm font-medium transition-colors"
                             href={project.codeUrl}
                             target="_blank"
                             rel="noopener noreferrer"
+                            onClick={e => e.stopPropagation()}
                           >
                             <span className="material-icons text-[18px]">code</span>
                             {messages.projects_view_code}
@@ -215,10 +225,11 @@ export default function AllProjects() {
                         )}
                         {project.appUrl && (
                           <a
-                            className="flex flex-1 items-center justify-center gap-2 py-2 rounded-lg bg-flutter-blue hover:bg-flutter-blue/90 text-background-dark text-sm font-bold transition-colors"
+                            className="pointer-events-auto flex flex-1 items-center justify-center gap-2 py-2 rounded-lg bg-flutter-blue hover:bg-flutter-blue/90 text-background-dark text-sm font-bold transition-colors"
                             href={project.appUrl}
                             target="_blank"
                             rel="noopener noreferrer"
+                            onClick={e => e.stopPropagation()}
                           >
                             <span className="material-icons text-[18px]">smartphone</span>
                             {messages.projects_view_app}
