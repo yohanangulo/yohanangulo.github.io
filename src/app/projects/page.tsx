@@ -155,7 +155,7 @@ export default function AllProjects() {
                   )}
                   <p className="text-text-secondary text-sm leading-relaxed line-clamp-2">{project.description}</p>
                   <div className="grid grid-cols-3 gap-2 my-2">
-                    {project.images.map((img, idx) => (
+                    {project.images?.slice(0, 3).map((img, idx) => (
                       <motion.div
                         key={`${img}`}
                         custom={{ i: idx, isLeft: index % 2 !== 0 }}
