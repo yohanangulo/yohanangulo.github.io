@@ -51,7 +51,13 @@ export const featuredProjects: FeaturedProject[] = [
     image: '/kairos/Kairos SS - 1.png',
     gallery: [
       '/kairos/Kairos SS - 1.png',
-      // Add more images here: '/kairos/screenshot-2.png', etc.
+      '/kairos/Kairos SS - 2.png',
+      '/kairos/Kairos SS - 3.png',
+      '/kairos/Kairos SS - 4.png',
+      '/kairos/Kairos SS - 5.png',
+      '/kairos/Kairos SS - 6.png',
+      '/kairos/Kairos SS - 7.png',
+      '/kairos/Kairos SS - 8.png',
     ],
   },
   {
