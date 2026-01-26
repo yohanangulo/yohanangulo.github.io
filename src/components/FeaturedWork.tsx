@@ -94,15 +94,19 @@ export default function FeaturedWork() {
             key={`project-${index}`}
             className="group relative flex flex-col md:flex-row gap-8 p-6 md:p-8 rounded-2xl bg-surface-dark border border-border-dark hover:border-primary/40 shadow-sm hover:shadow-xl hover:shadow-primary/5"
           >
+            {/* Invisible link overlay for SEO and accessibility */}
+            <Link
+              href={`/projects/${project.slug}`}
+              className="absolute inset-0 z-10 rounded-2xl"
+              aria-label={`Ver detalles de ${project.title}`}
+            />
             {/* Content Side */}
-            <div className="flex-1 flex flex-col gap-6">
+            <div className="relative z-20 flex-1 flex flex-col gap-6 pointer-events-none">
               <div className="space-y-2">
                 <div className="flex items-center gap-3 mb-1">
-                  <Link href={`/projects/${project.slug}`}>
-                    <h3 className="text-2xl font-bold text-white group-hover:text-primary transition-colors">
-                      {project.title}
-                    </h3>
-                  </Link>
+                  <h3 className="text-2xl font-bold text-white group-hover:text-primary transition-colors">
+                    {project.title}
+                  </h3>
                   {project.status && (
                     <span
                       className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium ring-1 ring-inset ${getStatusColor(
@@ -125,7 +129,8 @@ export default function FeaturedWork() {
                             href={author.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-1 px-3.5 py-0.5 rounded-full bg-border-dark/50 text-[11px] text-slate-300 hover:text-white hover:bg-primary transition-colors"
+                            onClick={e => e.stopPropagation()}
+                            className="pointer-events-auto inline-flex items-center gap-1 px-3.5 py-0.5 rounded-full bg-border-dark/50 text-[11px] text-slate-300 hover:text-white hover:bg-primary transition-colors"
                           >
                             <span className="material-icons text-[12px]">person</span>
                             {author.name}
@@ -183,30 +188,24 @@ export default function FeaturedWork() {
                 {project.actions.map((action, index) => (
                   <a
                     key={index}
-                    className={`flex items-center gap-2 text-sm font-semibold transition-colors ${
+                    className={`pointer-events-auto flex items-center gap-2 text-sm font-semibold transition-colors ${
                       action.type === 'primary' ? 'text-white hover:text-primary' : 'text-slate-400 hover:text-white'
                     }`}
                     href={action.url}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={e => e.stopPropagation()}
                   >
                     <span className="material-icons text-[20px]">{action.icon}</span>
                     {action.label}
                   </a>
                 ))}
-                <Link
-                  href={`/projects/${project.slug}`}
-                  className="flex items-center gap-2 text-sm font-semibold text-slate-400 hover:text-primary transition-colors"
-                >
-                  <span className="material-icons text-[20px]">visibility</span>
-                  View Details
-                </Link>
               </div>
             </div>
 
             {/* Visual Side (Mockup) */}
             <motion.div
-              className="w-full md:w-[320px] shrink-0 flex items-center justify-center bg-black/20 rounded-xl p-8 border border-border-dark overflow-hidden group-hover:bg-black/30 transition-colors"
+              className="relative z-20 w-full md:w-[320px] shrink-0 flex items-center justify-center bg-black/20 rounded-xl p-8 border border-border-dark overflow-hidden group-hover:bg-black/30 transition-colors pointer-events-none"
               custom={{ i: index, isLeft: index % 2 !== 0 }}
               variants={cardVariants}
               initial="imgHidden"
