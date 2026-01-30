@@ -95,7 +95,16 @@ export const featuredProjects: FeaturedProject[] = [
       },
     ],
     image: '/venley/demo.mp4',
-    gallery: ['/venley/demo.mp4', '/venley/demo2.mp4', '/venley/demo3.mp4'],
+    gallery: [
+      '/venley/demo.mp4',
+      '/venley/demo2.mp4',
+      '/venley/demo3.mp4',
+      '/venley/001.png',
+      '/venley/002.png',
+      '/venley/003.png',
+      '/venley/004.png',
+      '/venley/005.png',
+    ],
   },
   {
     id: 3,
