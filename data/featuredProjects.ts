@@ -176,9 +176,6 @@ export const featuredProjects: FeaturedProject[] = [
       },
     ],
     image: '/tcc/video_demo.mp4',
-    gallery: [
-      '/tcc/video_demo.mp4',
-      // Add more images here: '/tcc/screenshot-2.png', etc.
-    ],
+    gallery: ['/tcc/video_demo.mp4', '/tcc/001.png', '/tcc/002.png', '/tcc/003.png', '/tcc/004.png', '/tcc/005.png'],
   },
 ]
