@@ -123,7 +123,7 @@ export const featuredProjects: FeaturedProject[] = [
     actions: [
       {
         icon: 'code',
-        label: 'View Code',
+        label: 'Source Code',
         type: 'secondary',
         url: 'https://github.com/yohanangulo/spending-pal',
       },
