@@ -131,7 +131,13 @@ export const featuredProjects: FeaturedProject[] = [
     image: '/spendingpal/video_demo.mp4',
     gallery: [
       '/spendingpal/video_demo.mp4',
-      // Add more images here: '/spendingpal/screenshot-2.png', etc.
+      '/spendingpal/demo3.mp4',
+      '/spendingpal/demo2.mp4',
+      '/spendingpal/001.png',
+      '/spendingpal/002.png',
+      '/spendingpal/003.png',
+      '/spendingpal/004.png',
+      '/spendingpal/005.png',
     ],
   },
 
