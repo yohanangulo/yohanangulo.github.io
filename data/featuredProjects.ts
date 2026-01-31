@@ -1,5 +1,5 @@
 import { defaultAuthors, yohanAuthor } from './authors'
-import type { FeaturedProject } from './types'
+import type { FeaturedProject, Project } from './types'
 
 export const featuredProjects: FeaturedProject[] = [
   {
@@ -179,3 +179,18 @@ export const featuredProjects: FeaturedProject[] = [
     gallery: ['/tcc/video_demo.mp4', '/tcc/001.png', '/tcc/002.png', '/tcc/003.png', '/tcc/004.png', '/tcc/005.png'],
   },
 ]
+
+export function featuredProjectsToProject() {
+  return featuredProjects.map<Project>(project => ({
+    codeUrl: project.actions.find(action => action.label === 'Source Code')?.url,
+    title: project.title,
+    slug: project.slug,
+    authors: project.authors,
+    description: project.description,
+    images: project.gallery || [project.image],
+    tags: project.techStack,
+    status: project.status,
+    metrics: project.metrics,
+    actions: project.actions,
+  }))
+}
