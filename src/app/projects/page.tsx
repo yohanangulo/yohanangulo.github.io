@@ -186,11 +186,11 @@ export default function AllProjects() {
                               muted
                               loop
                               playsInline
-                              className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100"
+                              className="absolute inset-0 w-full h-full object-cover opacity-100 hover:opacity-90"
                             />
                           ) : (
                             <div
-                              className="absolute inset-0 bg-cover bg-center opacity-90 group-hover:opacity-100 transition-transform duration-500 hover:scale-105 transform"
+                              className="absolute inset-0 bg-cover bg-center opacity-100 hover:opacity-90 transition-transform duration-500 hover:scale-105 transform"
                               style={{ backgroundImage: `url("${img}")` }}
                             />
                           )}
