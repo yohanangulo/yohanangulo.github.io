@@ -182,6 +182,7 @@ export const featuredProjects: FeaturedProject[] = [
 
 export function featuredProjectsToProject() {
   return featuredProjects.map<Project>(project => ({
+    appUrl: project.actions.find(action => action.label === 'View App')?.url,
     codeUrl: project.actions.find(action => action.label === 'Source Code')?.url,
     title: project.title,
     slug: project.slug,
