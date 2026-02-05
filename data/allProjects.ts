@@ -76,4 +76,30 @@ export const allProjects: Project[] = [
       },
     ],
   },
+  {
+    images: [
+      '/redviral/001.png',
+      '/redviral/002.png',
+      '/redviral/003.png',
+      '/redviral/004.png',
+      '/redviral/005.png',
+      '/redviral/006.png',
+      '/redviral/007.png',
+      '/redviral/008.png',
+    ],
+    authors: [yohanAuthor, { name: 'Kiwi Company', url: 'https://www.kiwicompany.io/' }],
+    slug: 'redviral',
+    title: 'RedViral',
+    description:
+      'Task completion and micro-earning platform where users complete social media engagement tasks (TikTok, YouTube, Facebook, Instagram) to earn rewards. Features embedded WebView with JavaScript injection for task verification, real-time task tracking, wallet management, and OTA updates via Shorebird. Built with Clean Architecture and Firebase integration for analytics, crash reporting, and push notifications.',
+    tags: ['Clean Architecture', 'BLoC', 'Firebase', 'Dio', 'Shorebird OTA', 'WebView', 'Freezed'],
+    categories: ['Android'],
+    status: { text: 'In Production', color: 'green' },
+    metrics: [
+      { icon: 'sync_alt', label: 'State Management', value: 'BLoC' },
+      { icon: 'architecture', label: 'Architecture', value: 'Clean (Layer-First)' },
+      { icon: 'cloud_sync', label: 'Backend', value: 'Firebase + REST API' },
+    ],
+    appUrl: 'https://www.redviral.app',
+  },
 ]
