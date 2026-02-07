@@ -143,7 +143,7 @@ export const allProjects: Project[] = [
     description:
       'Real-time chat application built with Flutter and Firebase. Features user authentication, instant messaging, and push notifications.',
     images: ['/flutterchatapp/001.png', '/flutterchatapp/flutter_chat_demo.gif', '/flutterchatapp/002.png'],
-    tags: ['Flutter', 'Firebase', 'Chat App'],
+    tags: ['Flutter', 'Firebase', 'Chat App', 'Learning Project'],
     codeUrl: 'https://github.com/yohanangulo/flutter-chat',
   },
   {
@@ -152,7 +152,7 @@ export const allProjects: Project[] = [
     description:
       'Movie catalog app built with Flutter and the TMDB API. Features movie browsing, search, and detailed information pages.',
     images: ['/cinemapedia/demo.mp4'],
-    tags: ['Flutter', 'TMDB API', 'Movie Catalog'],
+    tags: ['Flutter', 'TMDB API', 'Movie Catalog', 'Learning Project'],
     codeUrl: 'https://github.com/yohanangulo/fernando-flutter/tree/main/cinemapedia',
   },
   {
@@ -160,7 +160,7 @@ export const allProjects: Project[] = [
     title: 'TokTik',
     description: 'TikTok clone built with Flutter.',
     images: ['/toktik/demo.mp4'],
-    tags: ['Flutter', 'Firebase', 'TikTok Clone'],
+    tags: ['Flutter', 'Firebase', 'TikTok Clone', 'Learning Project'],
     codeUrl: 'https://github.com/yohanangulo/fernando-flutter/tree/main/toktik',
   },
   {
@@ -169,7 +169,7 @@ export const allProjects: Project[] = [
     description:
       'Flutter mobile app for managing memorable places with GPS tracking, Google Maps integration, camera support, and SQLite storage. Built with Riverpod state management and Material Design 3.',
     images: ['/greatplaces/002.png', '/greatplaces/demo.gif', '/greatplaces/003.png'],
-    tags: ['Flutter', 'SQFlite', 'Places'],
+    tags: ['Flutter', 'SQFlite', 'Places', 'Learning Project'],
     codeUrl: 'https://github.com/yohanangulo/great-places',
   },
   {
