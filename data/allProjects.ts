@@ -181,4 +181,20 @@ export const allProjects: Project[] = [
     tags: ['Flutter', 'Expense Tracking', 'Learning Project'],
     codeUrl: 'https://github.com/yohanangulo/expense-tracker',
   },
+  {
+    slug: 'widgetsapp',
+    title: 'Widgets App',
+    description:
+      'This simple Widgets App was created as a part of my learning journey in Flutter. It serves as a demonstration of fundamental Flutter concepts and practices for building UI components.',
+    images: [
+      '/widgetsapp/001.png',
+      '/widgetsapp/002.png',
+      '/widgetsapp/003.png',
+      '/widgetsapp/004.png',
+      '/widgetsapp/005.png',
+      '/widgetsapp/006.png',
+    ],
+    tags: ['Flutter', 'Widgets', 'Learning Project'],
+    codeUrl: 'https://github.com/yohanangulo/fernando-flutter/tree/main/widgets_app',
+  },
 ]
