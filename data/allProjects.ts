@@ -163,4 +163,13 @@ export const allProjects: Project[] = [
     tags: ['Flutter', 'Firebase', 'TikTok Clone'],
     codeUrl: 'https://github.com/yohanangulo/fernando-flutter/tree/main/toktik',
   },
+  {
+    slug: 'greatplaces',
+    title: 'Great Places',
+    description:
+      'Flutter mobile app for managing memorable places with GPS tracking, Google Maps integration, camera support, and SQLite storage. Built with Riverpod state management and Material Design 3.',
+    images: ['/greatplaces/002.png', '/greatplaces/demo.gif', '/greatplaces/003.png'],
+    tags: ['Flutter', 'Firebase', 'Places'],
+    codeUrl: 'https://github.com/yohanangulo/great-places',
+  },
 ]
