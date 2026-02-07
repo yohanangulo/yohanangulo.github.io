@@ -155,4 +155,12 @@ export const allProjects: Project[] = [
     tags: ['Flutter', 'TMDB API', 'Movie Catalog'],
     codeUrl: 'https://github.com/yohanangulo/fernando-flutter/tree/main/cinemapedia',
   },
+  {
+    slug: 'toktik',
+    title: 'TokTik',
+    description: 'TikTok clone built with Flutter.',
+    images: ['/toktik/demo.mp4'],
+    tags: ['Flutter', 'Firebase', 'TikTok Clone'],
+    codeUrl: 'https://github.com/yohanangulo/fernando-flutter/tree/main/toktik',
+  },
 ]
