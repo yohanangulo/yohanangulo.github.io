@@ -146,4 +146,13 @@ export const allProjects: Project[] = [
     tags: ['Flutter', 'Firebase', 'Chat App'],
     codeUrl: 'https://github.com/yohanangulo/flutter-chat',
   },
+  {
+    slug: 'cinemapedia',
+    title: 'Cinemapedia',
+    description:
+      'Movie catalog app built with Flutter and the TMDB API. Features movie browsing, search, and detailed information pages.',
+    images: ['/cinemapedia/demo.mp4'],
+    tags: ['Flutter', 'TMDB API', 'Movie Catalog'],
+    codeUrl: 'https://github.com/yohanangulo/fernando-flutter/tree/main/cinemapedia',
+  },
 ]
