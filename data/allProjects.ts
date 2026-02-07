@@ -169,7 +169,16 @@ export const allProjects: Project[] = [
     description:
       'Flutter mobile app for managing memorable places with GPS tracking, Google Maps integration, camera support, and SQLite storage. Built with Riverpod state management and Material Design 3.',
     images: ['/greatplaces/002.png', '/greatplaces/demo.gif', '/greatplaces/003.png'],
-    tags: ['Flutter', 'Firebase', 'Places'],
+    tags: ['Flutter', 'SQFlite', 'Places'],
     codeUrl: 'https://github.com/yohanangulo/great-places',
+  },
+  {
+    slug: 'expensetracker',
+    title: 'Expense Tracker App',
+    description:
+      'This simple Expense Tracker App was created as a part of my learning journey in Flutter. It serves as a demonstration of fundamental Flutter concepts and practices for managing expenses.',
+    images: ['/expensetracker/001.gif', '/expensetracker/002.png', '/expensetracker/003.gif'],
+    tags: ['Flutter', 'Expense Tracking', 'Learning Project'],
+    codeUrl: 'https://github.com/yohanangulo/expense-tracker',
   },
 ]
