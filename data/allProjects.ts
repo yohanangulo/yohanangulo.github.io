@@ -137,4 +137,13 @@ export const allProjects: Project[] = [
     ],
     appUrl: 'https://yegasigur.com/',
   },
+  {
+    slug: 'flutterchatapp',
+    title: 'Flutter Chat App',
+    description:
+      'Real-time chat application built with Flutter and Firebase. Features user authentication, instant messaging, and push notifications.',
+    images: ['/flutterchatapp/001.png', '/flutterchatapp/flutter_chat_demo.gif', '/flutterchatapp/002.png'],
+    tags: ['Flutter', 'Firebase', 'Chat App'],
+    codeUrl: 'https://github.com/yohanangulo/flutter-chat',
+  },
 ]
