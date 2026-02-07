@@ -7,11 +7,13 @@ import Link from 'next/link'
 import Footer from '@/components/Footer'
 import { motion, Variants } from 'motion/react'
 import ImageLightbox from '@/components/ImageLightbox'
+import { useProjectsPagination } from '@/providers/projects-pagination-provider'
 
 export default function AllProjects() {
   const [filter] = useState('All')
-  const [visibleCount, setVisibleCount] = useState(6)
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
+
+  const { loadMore, visibleCount } = useProjectsPagination()
 
   const cardVariants: Variants = {
     hidden: (i: number) => ({
@@ -65,9 +67,7 @@ export default function AllProjects() {
   })
 
   // Load more projects handler
-  const handleLoadMore = () => {
-    setVisibleCount(prev => prev + 6)
-  }
+  const handleLoadMore = loadMore
 
   return (
     <main>
